@@ -19,6 +19,11 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ### Application Design:
 
+##### Landing Page Design
+
+<img src="images/darkmode.png" width="100%" >
+<img src="images/lightmode.png" width="100%" >
+
 ---
 
 ### Application Development:
