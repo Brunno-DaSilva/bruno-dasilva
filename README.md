@@ -4,7 +4,7 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ---
 
-<img src="./images/uc.png" >
+<img src="./images/uc.png" width="100" >
 
 ---
 
