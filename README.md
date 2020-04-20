@@ -4,13 +4,7 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ---
 
-<<<<<<< HEAD
 ![Under construction](uc.png)
-=======
-![Under construction](./Bruno-DaSilva.com.png)
->>>>>>> 05f773b0886a0c4b3142b3c2ff555204a732adb9
-
----
 
 ### Goals:
 
