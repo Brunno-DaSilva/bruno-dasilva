@@ -5,7 +5,6 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 ---
 
 ![Under construction](/Bruno-DaSilva.com.png)
-Format: ![Alt Text](url)
 
 ---
 
