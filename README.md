@@ -4,7 +4,7 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ---
 
-![Under construction](/Bruno-DaSilva.com.png)
+![Under construction](uc.png)
 
 ---
 
