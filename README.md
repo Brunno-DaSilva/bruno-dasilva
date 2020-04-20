@@ -21,8 +21,8 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ##### Landing Page Design
 
-<img src="images/darkmode.png" width="100%" >
-<img src="images/lightmode.png" width="100%" >
+<img src="images/Darkmode.png" width="100%" >
+<img src="images/Lightmode.png" width="100%" >
 
 ---
 
