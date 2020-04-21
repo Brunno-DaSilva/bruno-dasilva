@@ -21,7 +21,10 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ##### Landing Page Design
 
+DarkMode
 <img src="images/Darkmode.png" width="100%" >
+
+LightMode
 <img src="images/Lightmode.png" width="100%" >
 
 ---
@@ -33,6 +36,9 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 ### Tools :
 
     - ReactJS
+    - React Router
+    - React Spring
+    - SendGrid
     - JSX
     - Canva.com
     - Adobe Illustrator
