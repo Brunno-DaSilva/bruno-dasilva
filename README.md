@@ -42,6 +42,7 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
     - JSX
     - Canva.com
     - Adobe Illustrator
+    - FireBase
 
 ---
 
