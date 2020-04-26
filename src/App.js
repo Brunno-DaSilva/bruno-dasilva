@@ -30,20 +30,23 @@ export default function App() {
   
   return (
 
-    <section className="simple-trans-main">
+    <section id="main-container" className="simple-trans-main ">
       {transitions.map(({ item, props, key }) => {
         const Page = pages[item]
         return <Page key={key} style={props} />
       })}
 
-      <button className="btn-move-right" onClick={onClickRight}>
-        Move right
-      </button>
+      <article className="btn-holder-right">
+        <button className="btn-move-right display-right" onClick={onClickRight}>
+          Move right
+        </button>
+      </article>
 
-      <button className="btn-move-left" onClick={onClickLeft}>
-        Move left
-      </button>
-
+      <article className="btn-holder-left">
+        <button className="btn-move-left display-left" onClick={onClickLeft}>
+          Move left
+        </button>
+      </article>
     </section>
   )
 }

@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+:root{
+    --main-dark-gray-bg: #2b2b2b;
+    --main-light-gray-bg: #EAECEF;
+    --title-light-gray-color: #ACADAF;
+    --title-dark-gray-color: #545454;
+}
+
+
+img{
+    width: 7rem;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    color: #acadaf;
+}
