@@ -38,8 +38,10 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
     - ReactJS
     - React Router
     - React Spring
+    - React Ant
+     - JSX
     - SendGrid
-    - JSX
+    - FontAwesome
     - Canva.com
     - Adobe Illustrator
     - FireBase
