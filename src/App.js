@@ -6,7 +6,7 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faCog, faArrowUp,  faArrowDown} from "@fortawesome/free-solid-svg-icons";
+import {faCog, faArrowUp,  faArrowDown, faAdjust} from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt, faLinkedinIn, faCodepen} from "@fortawesome/free-brands-svg-icons";
 
 import "./index.css";
@@ -55,6 +55,11 @@ export default function App() {
         <p>Projects</p>
         <p>About</p>
         <p>Contact</p>
+        <p>
+          <FontAwesomeIcon icon={faAdjust} size="md"></FontAwesomeIcon>
+        </p>
+
+        
 
       </nav>
 
