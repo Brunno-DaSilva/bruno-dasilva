@@ -6,7 +6,7 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faGlobe} from "@fortawesome/free-solid-svg-icons";
+import {faCog, faArrowUp,  faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt, faLinkedinIn, faCodepen} from "@fortawesome/free-brands-svg-icons";
 
 import "./index.css";
@@ -18,7 +18,7 @@ const pages = [
     </animated.div>
   ),
   ({ style }) => (
-    <animated.div style={{ ...style, background: "lightblue" }}>
+    <animated.div style={{ ...style, background: "#2b2b2b" }}>
       <Projects />
     </animated.div>
   ),
@@ -55,6 +55,7 @@ export default function App() {
         <p>Projects</p>
         <p>About</p>
         <p>Contact</p>
+
       </nav>
 
       <div id="left-logo">
@@ -66,18 +67,24 @@ export default function App() {
 
       <div id="left-icons">
         <p>
+        <a target="_blank" href="https://github.com/DaSilvaBrunoTexas">
           <FontAwesomeIcon icon={faGithubAlt} size="md"></FontAwesomeIcon>
+          </a>
         </p>
         <p>
-          <FontAwesomeIcon icon={faCodepen} size="md"></FontAwesomeIcon>
+        <a target="_blank" href="https://codepen.io/dasilvabrunotexas/">
+          <FontAwesomeIcon icon={faCodepen} size="md"></FontAwesomeIcon></a>
         </p>
         <p>
+        <a target="_blank" href="https://www.linkedin.com/in/bruno-dasilva/">
           <FontAwesomeIcon icon={faLinkedinIn} size="md"></FontAwesomeIcon>
+        </a>
         </p>
         <p>
-          <FontAwesomeIcon icon={faGlobe} size="md"></FontAwesomeIcon>
+        <a target="_blank" href="https://profiles.generalassemb.ly/bruno-dasilva">
+          <FontAwesomeIcon icon={faCog} size="md"></FontAwesomeIcon>
+          </a>
         </p>
-        
       </div>
 
       <main id="main-container" className="simple-trans-main ">
@@ -88,16 +95,17 @@ export default function App() {
 
         <article className="btn-holder-right">
           <button
-            className="btn-move-right display-right"
+            className="btn-move-right"
             onClick={onClickRight}
           >
-            Move right
+          <FontAwesomeIcon icon={faArrowDown} size="lg"></FontAwesomeIcon>
+
           </button>
         </article>
 
         <article className="btn-holder-left">
-          <button className="btn-move-left display-left" onClick={onClickLeft}>
-            Move left
+          <button className="btn-move-left" onClick={onClickLeft}>
+          <FontAwesomeIcon icon={faArrowUp} size="lg"></FontAwesomeIcon>
           </button>
         </article>
       </main>

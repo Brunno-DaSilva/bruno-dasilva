@@ -4,7 +4,7 @@
 :root{
     --main-dark-gray-bg: #2b2b2b;
     --main-light-gray-bg: #EAECEF;
-    --title-light-gray-color: #ACADAF;
+    --title-light-gray-color: #9e9d9d;
     --title-dark-gray-color: #545454;
 }
 *, *::before, *::after{
@@ -63,6 +63,10 @@ body {
   padding: 0.5rem;
   margin: 0.5rem;
   margin-top: 3rem;
+}
+.navigation-bar p:hover {
+  cursor: pointer;
+  color: var(--title-light-gray-color);
 }
 
 
@@ -127,15 +131,17 @@ body {
   margin: 0;
   padding: 0;
   z-index: 99;
-  color: var(--title-light-gray-color);
+  color: var(--title-dark-gray-color);
   padding: 0.3rem;
   cursor: pointer;
-
+}
+#left-icons p a{
+  text-decoration: none;
+  color: var(--title-dark-gray-color);
 }
 
-#left-icons p:hover{
-  color: var(--title-dark-gray-color);
-
+#left-icons p a:hover{
+  color: var(--title-light-gray-color);
 }
 
 
@@ -160,8 +166,9 @@ body {
   cursor: pointer;
   font-size: 1rem;
   z-index: 500;  
-  background-color: #ce1cb049;
-  color: #ffffff;
+  background-color: transparent;
+  color: var(--title-light-gray-color);
+
   border: none; 
   border-radius: 5px;
 
@@ -176,9 +183,17 @@ body {
   cursor: pointer;
   font-size: 1rem;
   z-index: 500;  
-  background-color: #ce1cb049;
-  color: #ffffff;
+  background-color: transparent;
+  color: var(--title-light-gray-color);
   border: none; 
   border-radius: 5px;
+}
+
+.btn-move-left:focus, .btn-move-right:focus{
+  outline: none;
+}
+
+.btn-move-left:hover, .btn-move-right:hover{
+  color: var(--main-dark-gray-bg)
 }
 
