@@ -10,7 +10,7 @@ import Contact from "./Components/Contact/Contact"
 import './index.css'
 
 const pages = [
-({ style }) => <animated.div style={{ ...style, background: 'lightpink' }}><Home /></animated.div>,
+({ style }) => <animated.div style={{ ...style, background: '#EAECEF' }}><Home /></animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightblue' }}><Projects /></animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'lightgreen' }}><About /></animated.div>,
   ({ style }) => <animated.div style={{ ...style, background: 'tomato' }}><Contact /></animated.div>,

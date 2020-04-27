@@ -5,7 +5,7 @@ import logo from "./images/blogo-gray.png"
 class Home extends Component {
     render() {
         return (
-            <section>
+            <section class="section-container">
                 <img src={logo} />
                 <p>Front-end Development</p>
             </section>
