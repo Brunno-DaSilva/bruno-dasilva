@@ -31,6 +31,12 @@ I am re-designing my portfolio http://www.bruno-dasilva.com/
 
 ### Application Development:
 
+
+I decided to dig in React Springs and React Ant, to challenge myself to learn something new while re-branding and re-creating my portfolio. Among many challenges, understanding the core concept of React Springs was, without a shadow of doubt one of the most difficult aspects, however, once I started it was so addictive that I had to control myself and not animate every single portion of my site. 
+
+
+
+
 ---
 
 ### Tools :
