@@ -7,7 +7,8 @@ class Home extends Component {
     render() {
         return (
             <section class="section-container">
-                <img src={logo} />
+                
+                <img src={logo}  />
                 <p>Front-end Development</p>
             </section>
         );

@@ -5,7 +5,9 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
-import NavigationBar from "./Components/NavigationBar/NavigationBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faGlobe} from "@fortawesome/free-solid-svg-icons";
+import { faGithubAlt, faLinkedinIn, faCodepen} from "@fortawesome/free-brands-svg-icons";
 
 import "./index.css";
 
@@ -62,6 +64,21 @@ export default function App() {
         </p>
       </div>
 
+      <div id="left-icons">
+        <p>
+          <FontAwesomeIcon icon={faGithubAlt} size="md"></FontAwesomeIcon>
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faCodepen} size="md"></FontAwesomeIcon>
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faLinkedinIn} size="md"></FontAwesomeIcon>
+        </p>
+        <p>
+          <FontAwesomeIcon icon={faGlobe} size="md"></FontAwesomeIcon>
+        </p>
+        
+      </div>
 
       <main id="main-container" className="simple-trans-main ">
         {transitions.map(({ item, props, key }) => {
