@@ -18,7 +18,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--main-dark-gray-bg);
 }
 
 body {
@@ -43,6 +42,17 @@ body {
   height: 100%;
 }
 
+.simple-trans-main > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform, opacity;
+}
+
+
 .navigation-bar{
   position: absolute !important;
   top: 0;
@@ -57,7 +67,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: var(--title-dark-gray-color);
+  /* color: var(--title-dark-gray-color); */
   border: none; 
   background-color: transparent;
   padding: 0.5rem;
@@ -66,10 +76,12 @@ body {
 }
 .navigation-bar p:hover {
   cursor: pointer;
-    color: var(--gold-highlight-color);;
+  color: var(--gold-highlight-color);;
 }
 
-
+/*///////////////////////////////////////
+//  LightMode Top-Left-logo 
+///////////////////////////////////////*/
 #left-logo{
   position: absolute !important;
   top: 0;
@@ -86,7 +98,7 @@ body {
   font-weight: 800;
   letter-spacing: -0.06rem;
   text-align: center;
-  color: var(--title-dark-gray-color);
+  /* color: var(--title-dark-gray-color); */
   text-transform: uppercase;
   border: 0.2rem solid var(--title-dark-gray-color); 
   border-radius: 0.3rem;
@@ -104,13 +116,73 @@ body {
   letter-spacing: -0.06rem;
   text-align: center;
   text-transform: uppercase;
-  color: var(--title-dark-gray-color);
+  /* color: var(--title-dark-gray-color); */
   padding: 0.5rem;
-  background-color: transparent;
+  background-color: transparent !important;
   margin: 0.5rem;
   margin-top: 3rem;
   
 }
+/*///////////////////////////////////////
+//  END - LightMode Top-Left-logo 
+///////////////////////////////////////*/
+
+
+/*///////////////////////////////////////
+//  DarkMode Top-Left-logo 
+///////////////////////////////////////*/
+
+#dark-mode-left-logo{
+  position: absolute !important;
+  top: 0;
+  left: 3%;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  z-index: 99;
+  
+}
+
+#dark-mode-left-logo p {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.06rem;
+  text-align: center;
+  /* color: var(--title-light-gray-color); */
+  text-transform: uppercase;
+  border: 0.2rem solid var(--title-light-gray-color); 
+  border-radius: 0.3rem;
+  padding: 0.1rem;
+  background-color: transparent;
+  margin: 0.5rem;
+  margin-top: 3rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#dark-mode-left-logo p span{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: -0.06rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-light-gray-bg);
+  padding: 0.5rem;
+  background-color: transparent !important;
+  margin: 0.5rem;
+  margin-top: 3rem;
+}
+
+/*///////////////////////////////////////
+//  END - DarkMode Top-Left-logo 
+///////////////////////////////////////*/
+
+
+
+/*///////////////////////////////////////
+//  LightMode Bottom-Left-Icons 
+///////////////////////////////////////*/
 
 #left-icons{
   position: absolute !important;
@@ -135,6 +207,7 @@ body {
   padding: 0.3rem;
   cursor: pointer;
 }
+
 #left-icons p a{
   text-decoration: none;
   color: var(--title-dark-gray-color);
@@ -144,50 +217,85 @@ body {
   color: var(--gold-highlight-color);
 }
 
-.simple-trans-main > div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+/*///////////////////////////////////////
+//  END -LightMode Bottom-Left-Icons 
+///////////////////////////////////////*/
+
+/*///////////////////////////////////////
+//  DarkMode Bottom-Left-Icons 
+///////////////////////////////////////*/
+
+#dark-mode-left-icons{
+  position: absolute !important;
+  top: 80%;
+  left: 3%;
+  width: 30%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  will-change: transform, opacity;
-  
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
 }
 
-.btn-holder-left, .btn-holder-right{
-  background-color: #9e9d9d36;
+#dark-mode-left-icons p{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  z-index: 99;
+  color: var(--title-light-gray-color);
+  padding: 0.3rem;
+  cursor: pointer;
 }
+#dark-mode-left-icons p a{
+  text-decoration: none;
+  color: var(--title-light-gray-color);
+}
+
+#dark-mode-left-icons p a:hover{
+  color: var(--gold-highlight-color);
+}
+
+/*///////////////////////////////////////
+//  END -DarkMode Bottom-Left-Icons 
+///////////////////////////////////////*/
+
+/*///////////////////////////////////////
+//  LightMode Right-Bottom-Buttons  
+///////////////////////////////////////*/
+
 .btn-move-right{
   position: absolute;
-  top: 90vh; 
+  top: 91vh; 
   left: 95vw;
-  width: 5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
   z-index: 500;  
-  background-color: transparent;
-  color: var(--title-light-gray-color);
-
-  border: none; 
-  border-radius: 5px;
+  background-color: #5454548c;
+  color: var(--main-light-gray-bg);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 
 }
 
 .btn-move-left{
   position: absolute;
-  top: 87vh; 
+  top: 85vh; 
   left: 95vw;
-  width: 5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
   z-index: 500;  
-  background-color: transparent;
-  color: var(--title-light-gray-color);
-  border: none; 
-  border-radius: 5px;
+  background-color: #5454548c;
+  color: var(--main-light-gray-bg);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
 }
 
 .btn-move-left:focus, .btn-move-right:focus{
@@ -198,3 +306,69 @@ body {
   color: var(--gold-highlight-color);
 }
 
+/*///////////////////////////////////////
+//  END - LightMode Right-Bottom-Buttons  
+///////////////////////////////////////*/
+
+/*///////////////////////////////////////
+//  DarkMode Right-Bottom-Buttons  
+///////////////////////////////////////*/
+
+
+.dark-mode-btn-move-right{
+  position: absolute;
+  top: 91vh; 
+  left: 95vw;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 500;  
+  background-color: rgba(253, 251, 246, 0.657);
+  color: var(--title-dark-gray-color);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.dark-mode-btn-move-left{
+  position: absolute;
+  top: 85vh; 
+  left: 95vw;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 500;  
+  background-color: rgba(253, 251, 246, 0.657);
+  color: var(--title-dark-gray-color);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.dark-mode-btn-move-left:focus, .btn-move-right:focus{
+  outline: none;
+}
+
+.dark-mode-btn-move-left:hover, .btn-move-right:hover{
+  color: var(--gold-highlight-color);
+}
+
+/*///////////////////////////////////////
+//  END - DarkMode Right-Bottom-Buttons  
+///////////////////////////////////////*/
+
+/*///////////////////////////////////////
+// General Dark and Light Mode classes 
+///////////////////////////////////////*/
+
+.dark-mode{
+  background:linear-gradient(to top left, #000000, #545454) !important;
+  color: var(--main-light-gray-bg) !important;
+}
+
+.light-mode{
+  background: linear-gradient(to top left, #ffffff, #cfd2d6) !important;
+  color: var(--title-dark-gray-color) !important;
+}
