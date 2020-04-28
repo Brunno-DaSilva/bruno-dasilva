@@ -44,7 +44,6 @@ I decided to dig in React Springs and React Ant, to challenge myself to learn so
     - ReactJS
     - React Router
     - React Spring
-    - React Ant
      - JSX
     - SendGrid
     - FontAwesome
