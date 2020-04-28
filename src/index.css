@@ -6,10 +6,11 @@
     --main-light-gray-bg: #EAECEF;
     --title-light-gray-color: #9e9d9d;
     --title-dark-gray-color: #545454;
+    --gold-highlight-color: #FCA311; 
 }
 *, *::before, *::after{
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  
 }
 html,
 body {
@@ -17,7 +18,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  
+  background-color: var(--main-dark-gray-bg);
 }
 
 body {
@@ -65,7 +66,7 @@ body {
 }
 .navigation-bar p:hover {
   cursor: pointer;
-  color: var(--title-light-gray-color);
+    color: var(--gold-highlight-color);;
 }
 
 
@@ -140,10 +141,8 @@ body {
 }
 
 #left-icons p a:hover{
-  color: var(--title-light-gray-color);
+  color: var(--gold-highlight-color);
 }
-
-
 
 .simple-trans-main > div {
   position: absolute;
@@ -156,9 +155,12 @@ body {
   
 }
 
+.btn-holder-left, .btn-holder-right{
+  background-color: #9e9d9d36;
+}
 .btn-move-right{
   position: absolute;
-  top: 50vh; 
+  top: 90vh; 
   left: 95vw;
   width: 5rem;
   padding: 1rem;
@@ -175,8 +177,8 @@ body {
 
 .btn-move-left{
   position: absolute;
-  top: 50vh; 
-  left: 1vw;
+  top: 87vh; 
+  left: 95vw;
   width: 5rem;
   padding: 1rem;
   cursor: pointer;
@@ -193,6 +195,6 @@ body {
 }
 
 .btn-move-left:hover, .btn-move-right:hover{
-  color: var(--main-dark-gray-bg)
+  color: var(--gold-highlight-color);
 }
 

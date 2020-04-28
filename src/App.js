@@ -5,6 +5,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faCog, faArrowUp,  faArrowDown, faAdjust} from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt, faLinkedinIn, faCodepen} from "@fortawesome/free-brands-svg-icons";
@@ -111,7 +112,7 @@ export default function App() {
         <article className="btn-holder-left">
           <button className="btn-move-left" onClick={onClickLeft}>
           <FontAwesomeIcon icon={faArrowUp} size="lg"></FontAwesomeIcon>
-          </button>
+          </button>          
         </article>
       </main>
     </section>

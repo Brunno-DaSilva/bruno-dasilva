@@ -17,9 +17,9 @@
     "react-spring": "^8.0.27"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-scripts start start",
+    "build": "react-scripts start build",
+    "test": "react-scripts start test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
