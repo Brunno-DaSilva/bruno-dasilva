@@ -1,17 +1,18 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-:root{
-    --main-dark-gray-bg: #2b2b2b;
-    --main-light-gray-bg: #EAECEF;
-    --title-light-gray-color: #9e9d9d;
-    --title-dark-gray-color: #545454;
-    --gold-highlight-color: #FCA311; 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+:root {
+  --main-dark-gray-bg: #2b2b2b;
+  --main-light-gray-bg: #eaecef;
+  --title-light-gray-color: #9e9d9d;
+  --title-dark-gray-color: #545454;
+  --gold-highlight-color: #fca311;
 }
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  
 }
+
 html,
 body {
   width: 100%;
@@ -21,7 +22,7 @@ body {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -52,8 +53,7 @@ body {
   will-change: transform, opacity;
 }
 
-
-.navigation-bar{
+.navigation-bar {
   position: absolute !important;
   top: 0;
   left: 78%;
@@ -64,11 +64,11 @@ body {
 }
 
 .navigation-bar p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
   /* color: var(--title-dark-gray-color); */
-  border: none; 
+  border: none;
   background-color: transparent;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -76,13 +76,13 @@ body {
 }
 .navigation-bar p:hover {
   cursor: pointer;
-  color: var(--gold-highlight-color);;
+  color: var(--gold-highlight-color);
 }
 
 /*///////////////////////////////////////
 //  LightMode Top-Left-logo 
 ///////////////////////////////////////*/
-#left-logo{
+#left-logo {
   position: absolute !important;
   top: 0;
   left: 3%;
@@ -90,27 +90,26 @@ body {
   display: flex;
   flex-direction: row;
   z-index: 99;
-  
 }
 #left-logo p {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.06rem;
   text-align: center;
   /* color: var(--title-dark-gray-color); */
   text-transform: uppercase;
-  border: 0.2rem solid var(--title-dark-gray-color); 
+  border: 0.2rem solid var(--title-dark-gray-color);
   border-radius: 0.3rem;
   padding: 0.1rem;
   background-color: transparent;
   margin: 0.5rem;
   margin-top: 3rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#left-logo p span{
-  font-family: 'Archivo Black', sans-serif;
+#left-logo p span {
+  font-family: "Archivo Black", sans-serif;
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: -0.06rem;
@@ -121,18 +120,16 @@ body {
   background-color: transparent !important;
   margin: 0.5rem;
   margin-top: 3rem;
-  
 }
 /*///////////////////////////////////////
 //  END - LightMode Top-Left-logo 
 ///////////////////////////////////////*/
 
-
 /*///////////////////////////////////////
 //  DarkMode Top-Left-logo 
 ///////////////////////////////////////*/
 
-#dark-mode-left-logo{
+#dark-mode-left-logo {
   position: absolute !important;
   top: 0;
   left: 3%;
@@ -140,28 +137,27 @@ body {
   display: flex;
   flex-direction: row;
   z-index: 99;
-  
 }
 
 #dark-mode-left-logo p {
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.06rem;
   text-align: center;
   /* color: var(--title-light-gray-color); */
   text-transform: uppercase;
-  border: 0.2rem solid var(--title-light-gray-color); 
+  border: 0.2rem solid var(--title-light-gray-color);
   border-radius: 0.3rem;
   padding: 0.1rem;
   background-color: transparent;
   margin: 0.5rem;
   margin-top: 3rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#dark-mode-left-logo p span{
-  font-family: 'Archivo Black', sans-serif;
+#dark-mode-left-logo p span {
+  font-family: "Archivo Black", sans-serif;
   font-size: 1.1rem;
   font-weight: 900;
   letter-spacing: -0.06rem;
@@ -178,13 +174,11 @@ body {
 //  END - DarkMode Top-Left-logo 
 ///////////////////////////////////////*/
 
-
-
 /*///////////////////////////////////////
 //  LightMode Bottom-Left-Icons 
 ///////////////////////////////////////*/
 
-#left-icons{
+#left-icons {
   position: absolute !important;
   top: 80%;
   left: 3%;
@@ -197,7 +191,7 @@ body {
   z-index: 99;
 }
 
-#left-icons p{
+#left-icons p {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -208,12 +202,12 @@ body {
   cursor: pointer;
 }
 
-#left-icons p a{
+#left-icons p a {
   text-decoration: none;
   color: var(--title-dark-gray-color);
 }
 
-#left-icons p a:hover{
+#left-icons p a:hover {
   color: var(--gold-highlight-color);
 }
 
@@ -225,7 +219,7 @@ body {
 //  DarkMode Bottom-Left-Icons 
 ///////////////////////////////////////*/
 
-#dark-mode-left-icons{
+#dark-mode-left-icons {
   position: absolute !important;
   top: 80%;
   left: 3%;
@@ -238,7 +232,7 @@ body {
   z-index: 99;
 }
 
-#dark-mode-left-icons p{
+#dark-mode-left-icons p {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -248,12 +242,12 @@ body {
   padding: 0.3rem;
   cursor: pointer;
 }
-#dark-mode-left-icons p a{
+#dark-mode-left-icons p a {
   text-decoration: none;
   color: var(--title-light-gray-color);
 }
 
-#dark-mode-left-icons p a:hover{
+#dark-mode-left-icons p a:hover {
   color: var(--gold-highlight-color);
 }
 
@@ -265,31 +259,14 @@ body {
 //  LightMode Right-Bottom-Buttons  
 ///////////////////////////////////////*/
 
-.btn-move-right{
+.btn-move-right {
   position: absolute;
-  top: 91vh; 
+  top: 91vh;
   left: 95vw;
   padding: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 500;  
-  background-color: #5454548c;
-  color: var(--main-light-gray-bg);
-  border: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-
-}
-
-.btn-move-left{
-  position: absolute;
-  top: 85vh; 
-  left: 95vw;
-  padding: 0.5rem;
-  cursor: pointer;
-  font-size: 1rem;
-  z-index: 500;  
+  z-index: 500;
   background-color: #5454548c;
   color: var(--main-light-gray-bg);
   border: none;
@@ -298,11 +275,29 @@ body {
   border-radius: 50%;
 }
 
-.btn-move-left:focus, .btn-move-right:focus{
+.btn-move-left {
+  position: absolute;
+  top: 85vh;
+  left: 95vw;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 500;
+  background-color: #5454548c;
+  color: var(--main-light-gray-bg);
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.btn-move-left:focus,
+.btn-move-right:focus {
   outline: none;
 }
 
-.btn-move-left:hover, .btn-move-right:hover{
+.btn-move-left:hover,
+.btn-move-right:hover {
   color: var(--gold-highlight-color);
 }
 
@@ -314,15 +309,14 @@ body {
 //  DarkMode Right-Bottom-Buttons  
 ///////////////////////////////////////*/
 
-
-.dark-mode-btn-move-right{
+.dark-mode-btn-move-right {
   position: absolute;
-  top: 91vh; 
+  top: 91vh;
   left: 95vw;
   padding: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 500;  
+  z-index: 500;
   background-color: rgba(253, 251, 246, 0.657);
   color: var(--title-dark-gray-color);
   border: none;
@@ -331,14 +325,14 @@ body {
   border-radius: 50%;
 }
 
-.dark-mode-btn-move-left{
+.dark-mode-btn-move-left {
   position: absolute;
-  top: 85vh; 
+  top: 85vh;
   left: 95vw;
   padding: 0.5rem;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 500;  
+  z-index: 500;
   background-color: rgba(253, 251, 246, 0.657);
   color: var(--title-dark-gray-color);
   border: none;
@@ -347,11 +341,13 @@ body {
   border-radius: 50%;
 }
 
-.dark-mode-btn-move-left:focus, .btn-move-right:focus{
+.dark-mode-btn-move-left:focus,
+.btn-move-right:focus {
   outline: none;
 }
 
-.dark-mode-btn-move-left:hover, .btn-move-right:hover{
+.dark-mode-btn-move-left:hover,
+.btn-move-right:hover {
   color: var(--gold-highlight-color);
 }
 
@@ -363,12 +359,46 @@ body {
 // General Dark and Light Mode classes 
 ///////////////////////////////////////*/
 
-.dark-mode{
-  background:linear-gradient(to top left, #000000, #545454) !important;
+.dark-mode {
+  background: linear-gradient(to top left, #000000, #545454) !important;
   color: var(--main-light-gray-bg) !important;
 }
 
-.light-mode{
+.light-mode {
   background: linear-gradient(to top left, #ffffff, #cfd2d6) !important;
   color: var(--title-dark-gray-color) !important;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 85vw;
+  height: 70vh;
+  border: 1px solid gold;
+}
+
+.card-one,
+.card-two,
+.card-three,
+.card-four {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+}
+
+.card-two,
+.card-three {
+  display: flex;
+  background-color: var(--main-dark-gray-bg);
+}
+
+.card-one,
+.card-four {
+  display: flex;
+  background-color: var(--main-light-gray-bg);
 }
