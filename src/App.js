@@ -1,10 +1,12 @@
 import { render } from "react-dom";
 import React, { useState, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
+import NavigationBar from "./Components/NavigationBar/NavigationBar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -36,7 +38,7 @@ export default function App() {
         className={darkMode ? "dark-mode" : "light-mode"}
         style={{ ...style }}
       >
-        <Projects />
+        <About />
       </animated.div>
     ),
     ({ style }) => (
@@ -44,7 +46,7 @@ export default function App() {
         className={darkMode ? "dark-mode" : "light-mode"}
         style={{ ...style }}
       >
-        <About />
+        <Projects />
       </animated.div>
     ),
     ({ style }) => (
@@ -58,7 +60,9 @@ export default function App() {
   ];
 
   const [index, set] = useState(0);
+
   const onClickRight = useCallback(() => set((state) => (state + 1) % 4), []);
+
   const onClickLeft = useCallback(
     () => set((state) => (state <= 0 ? "" : state - 1) % 4),
     []
@@ -74,20 +78,20 @@ export default function App() {
 
   return (
     <section className={darkMode ? "dark-mode" : "light-mode"}>
+      {/* topright navigation  */}
       <nav className="navigation-bar">
-        <p>Home</p>
-        <p>Projects</p>
-        <p>About</p>
-        <p>Contact</p>
+        {/* <NavigationBar /> */}
+        <NavigationBar />
         <p>
           <FontAwesomeIcon
             onClick={() => setDarkMode((prevMode) => !prevMode)}
             icon={faAdjust}
-            size="md"
+            size="1x"
           ></FontAwesomeIcon>
         </p>
       </nav>
 
+      {/* leftTop brunoName logo */}
       <div id={darkMode ? "dark-mode-left-logo" : "left-logo"}>
         <p>
           Bruno <br />
@@ -95,20 +99,21 @@ export default function App() {
         </p>
       </div>
 
+      {/* Leftbottom icons  */}
       <div id={darkMode ? "dark-mode-left-icons" : "left-icons"}>
         <p>
           <a target="_blank" href="https://github.com/DaSilvaBrunoTexas">
-            <FontAwesomeIcon icon={faGithubAlt} size="md"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faGithubAlt} size="1x"></FontAwesomeIcon>
           </a>
         </p>
         <p>
           <a target="_blank" href="https://codepen.io/dasilvabrunotexas/">
-            <FontAwesomeIcon icon={faCodepen} size="md"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faCodepen} size="1x"></FontAwesomeIcon>
           </a>
         </p>
         <p>
           <a target="_blank" href="https://www.linkedin.com/in/bruno-dasilva/">
-            <FontAwesomeIcon icon={faLinkedinIn} size="md"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faLinkedinIn} size="1x"></FontAwesomeIcon>
           </a>
         </p>
         <p>
@@ -116,7 +121,7 @@ export default function App() {
             target="_blank"
             href="https://profiles.generalassemb.ly/bruno-dasilva"
           >
-            <FontAwesomeIcon icon={faCog} size="md"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faCog} size="1x"></FontAwesomeIcon>
           </a>
         </p>
       </div>
