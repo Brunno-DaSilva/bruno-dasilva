@@ -362,6 +362,7 @@ body {
 .dark-mode {
   background: linear-gradient(to top left, #000000, #545454) !important;
   color: var(--main-light-gray-bg) !important;
+  transition: all 0.5s;
 }
 
 .light-mode {

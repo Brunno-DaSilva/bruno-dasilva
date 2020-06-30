@@ -1,7 +1,7 @@
 import { render } from "react-dom";
 import React, { useState, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Router } from "@reach/router";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
@@ -30,7 +30,9 @@ export default function App() {
         className={darkMode ? "dark-mode" : "light-mode"}
         style={{ ...style }}
       >
-        <Home />
+        <Router>
+          <Home path="/" />
+        </Router>
       </animated.div>
     ),
     ({ style }) => (
@@ -38,7 +40,9 @@ export default function App() {
         className={darkMode ? "dark-mode" : "light-mode"}
         style={{ ...style }}
       >
-        <About />
+        <Router>
+          <About path="about" />
+        </Router>
       </animated.div>
     ),
     ({ style }) => (
