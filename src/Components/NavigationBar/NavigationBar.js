@@ -6,8 +6,8 @@ class NavigationBar extends Component {
       <nav className="navigation-bar">
         <Link to="/">Home</Link>
         <Link to="about">About</Link>
-        <p>Projects</p>
-        <p>Contact</p>
+        <Link to="projects">Projects</Link>
+        <Link to="contact">Contact</Link>
       </nav>
     );
   }

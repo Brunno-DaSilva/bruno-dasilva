@@ -6,7 +6,41 @@
   --title-light-gray-color: #9e9d9d;
   --title-dark-gray-color: #545454;
   --gold-highlight-color: #fca311;
+
+  --dark-mode-bg: linear-gradient(to top left, #000000, #545454);
+
+  --background: var(--dark-mode-bg);
+  --foreground: var(--title-light-gray-color);
 }
+
+/*///////////////////////////////////////
+// General Dark and Light Mode classes 
+///////////////////////////////////////*/
+
+.dark-mode {
+  /* background: linear-gradient(to top left, #000000, #545454) !important;
+  color: var(--main-light-gray-bg) !important;
+  transition: all 0.5s; */
+  --main-dark-gray-bg: #2b2b2b;
+  --main-light-gray-bg: #eaecef;
+  --title-light-gray-color: #9e9d9d;
+  --title-dark-gray-color: #545454;
+  --gold-highlight-color: #fca311;
+
+  --dark-mode-bg: linear-gradient(to top left, #000000, #545454);
+
+  --background: var(--dark-mode-bg);
+  --foreground: var(--title-light-gray-color);
+}
+
+.light-mode {
+  --title-dark-gray-color: #545454;
+  --light-mode-bg: linear-gradient(to top left, #ffffff, #cfd2d6) !important;
+
+  --foreground: var(--title-dark-gray-color);
+  --background: var(--light-mode-bg);
+}
+
 *,
 *::before,
 *::after {
@@ -23,7 +57,7 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: var(--main-dark-gray-bg);
+  background: var(--background);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -45,12 +79,18 @@ body {
 
 .simple-trans-main > div {
   position: absolute;
+
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   will-change: transform, opacity;
+  background: var(--background) !important;
+}
+
+.home-logo-p {
+  color: var(--foreground);
 }
 
 .navigation-bar {
@@ -63,16 +103,20 @@ body {
   box-sizing: border-box;
 }
 
-.navigation-bar p {
+.navigation-bar p,
+.navigation-bar a {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
+  font-weight: 600;
   text-transform: uppercase;
-  /* color: var(--title-dark-gray-color); */
+  color: var(--foreground) !important;
   border: none;
   background-color: transparent;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  margin-top: 3rem;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  margin-top: 3.5rem;
+  list-style: none;
+  text-decoration: none;
 }
 .navigation-bar p:hover {
   cursor: pointer;
@@ -97,7 +141,7 @@ body {
   font-weight: 800;
   letter-spacing: -0.06rem;
   text-align: center;
-  /* color: var(--title-dark-gray-color); */
+  color: var(--foreground) !important;
   text-transform: uppercase;
   border: 0.2rem solid var(--title-dark-gray-color);
   border-radius: 0.3rem;
@@ -115,7 +159,7 @@ body {
   letter-spacing: -0.06rem;
   text-align: center;
   text-transform: uppercase;
-  /* color: var(--title-dark-gray-color); */
+  color: var(--foreground);
   padding: 0.5rem;
   background-color: transparent !important;
   margin: 0.5rem;
@@ -145,7 +189,7 @@ body {
   font-weight: 800;
   letter-spacing: -0.06rem;
   text-align: center;
-  /* color: var(--title-light-gray-color); */
+  color: var(--foreground) !important;
   text-transform: uppercase;
   border: 0.2rem solid var(--title-light-gray-color);
   border-radius: 0.3rem;
@@ -163,7 +207,7 @@ body {
   letter-spacing: -0.06rem;
   text-align: center;
   text-transform: uppercase;
-  color: var(--main-light-gray-bg);
+  color: var(--foreground) !important;
   padding: 0.5rem;
   background-color: transparent !important;
   margin: 0.5rem;
@@ -197,14 +241,14 @@ body {
   margin: 0;
   padding: 0;
   z-index: 99;
-  color: var(--title-dark-gray-color);
+  color: var(--foreground);
   padding: 0.3rem;
   cursor: pointer;
 }
 
 #left-icons p a {
   text-decoration: none;
-  color: var(--title-dark-gray-color);
+  color: var(--foreground);
 }
 
 #left-icons p a:hover {
@@ -354,21 +398,6 @@ body {
 /*///////////////////////////////////////
 //  END - DarkMode Right-Bottom-Buttons  
 ///////////////////////////////////////*/
-
-/*///////////////////////////////////////
-// General Dark and Light Mode classes 
-///////////////////////////////////////*/
-
-.dark-mode {
-  background: linear-gradient(to top left, #000000, #545454) !important;
-  color: var(--main-light-gray-bg) !important;
-  transition: all 0.5s;
-}
-
-.light-mode {
-  background: linear-gradient(to top left, #ffffff, #cfd2d6) !important;
-  color: var(--title-dark-gray-color) !important;
-}
 
 .projects-container {
   display: flex;

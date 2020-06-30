@@ -8,7 +8,7 @@ class Home extends Component {
     return (
       <section className="section-container">
         <img src={logo} />
-        <p>Front-end Development</p>
+        <p className="home-logo-p">Front-end Development</p>
       </section>
     );
   }

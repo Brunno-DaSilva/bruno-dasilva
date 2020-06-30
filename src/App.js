@@ -24,59 +24,59 @@ import {
 import "./index.css";
 
 export default function App() {
-  const pages = [
-    ({ style }) => (
-      <animated.div
-        className={darkMode ? "dark-mode" : "light-mode"}
-        style={{ ...style }}
-      >
-        <Router>
-          <Home path="/" />
-        </Router>
-      </animated.div>
-    ),
-    ({ style }) => (
-      <animated.div
-        className={darkMode ? "dark-mode" : "light-mode"}
-        style={{ ...style }}
-      >
-        <Router>
-          <About path="about" />
-        </Router>
-      </animated.div>
-    ),
-    ({ style }) => (
-      <animated.div
-        className={darkMode ? "dark-mode" : "light-mode"}
-        style={{ ...style }}
-      >
-        <Projects />
-      </animated.div>
-    ),
-    ({ style }) => (
-      <animated.div
-        className={darkMode ? "dark-mode" : "light-mode"}
-        style={{ ...style }}
-      >
-        <Contact />
-      </animated.div>
-    ),
-  ];
+  // const pages = [
+  //   ({ style }) => (
+  //     <animated.div
+  //       className={darkMode ? "dark-mode" : "light-mode"}
+  //       style={{ ...style }}
+  //     >
+  //       <Router>
+  //         <Home path="/" />
+  //       </Router>
+  //     </animated.div>
+  //   ),
+  //   ({ style }) => (
+  //     <animated.div
+  //       className={darkMode ? "dark-mode" : "light-mode"}
+  //       style={{ ...style }}
+  //     >
+  //       <Router>
+  //         <About path="about" />
+  //       </Router>
+  //     </animated.div>
+  //   ),
+  //   ({ style }) => (
+  //     <animated.div
+  //       className={darkMode ? "dark-mode" : "light-mode"}
+  //       style={{ ...style }}
+  //     >
+  //       <Projects />
+  //     </animated.div>
+  //   ),
+  //   ({ style }) => (
+  //     <animated.div
+  //       className={darkMode ? "dark-mode" : "light-mode"}
+  //       style={{ ...style }}
+  //     >
+  //       <Contact />
+  //     </animated.div>
+  //   ),
+  // ];
 
-  const [index, set] = useState(0);
+  // const [index, set] = useState(0);
 
-  const onClickRight = useCallback(() => set((state) => (state + 1) % 4), []);
+  // const onClickRight = useCallback(() => set((state) => (state + 1) % 4), []);
 
-  const onClickLeft = useCallback(
-    () => set((state) => (state <= 0 ? "" : state - 1) % 4),
-    []
-  );
+  // const onClickLeft = useCallback(
+  //   () => set((state) => (state <= 0 ? "" : state - 1) % 4),
+  //   []
+  // );
 
-  const transitions = useTransition(index, (p) => p, {
-    from: { opacity: 0, transform: "translate3d(0,100%,0)" },
-    enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-    leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
-  });
+  // const transitions = useTransition(index, (p) => p, {
+  //   from: { opacity: 0, transform: "translate3d(0,100%,0)" },
+  //   enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
+  //   leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
+  // });
 
   const [darkMode, setDarkMode] = React.useState(false);
 
@@ -130,12 +130,20 @@ export default function App() {
         </p>
       </div>
 
-      <main id="main-container" className="simple-trans-main ">
-        {transitions.map(({ item, props, key }) => {
-          const Page = pages[item];
-          return <Page key={key} style={props} />;
-        })}
-
+      <main
+        id="main-container"
+        className={
+          darkMode
+            ? "simple-trans-main  dark-mode  "
+            : "simple-trans-main light-mode"
+        }
+      >
+        <Router>
+          <Home path="/" />
+          <About path="about" />
+          <Projects path="projects" />
+          <Contact path="contact" />
+        </Router>
         <article
           className={
             darkMode ? "dark-mode-btn-holder-right" : "btn-holder-right"
@@ -143,7 +151,6 @@ export default function App() {
         >
           <button
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
-            onClick={onClickRight}
           >
             <FontAwesomeIcon icon={faArrowDown} size="lg"></FontAwesomeIcon>
           </button>
@@ -154,7 +161,6 @@ export default function App() {
         >
           <button
             className={darkMode ? "dark-mode-btn-move-left" : "btn-move-left"}
-            onClick={onClickLeft}
           >
             <FontAwesomeIcon icon={faArrowUp} size="lg"></FontAwesomeIcon>
           </button>
