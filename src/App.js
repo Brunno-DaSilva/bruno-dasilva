@@ -1,13 +1,13 @@
 import { render } from "react-dom";
 import React, { useState, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
-import { Router } from "@reach/router";
+import { Router, Link } from "@reach/router";
+
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import NavigationBar from "./Components/NavigationBar/NavigationBar";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCog,
@@ -20,68 +20,12 @@ import {
   faLinkedinIn,
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
-
 import "./index.css";
-
 export default function App() {
-  // const pages = [
-  //   ({ style }) => (
-  //     <animated.div
-  //       className={darkMode ? "dark-mode" : "light-mode"}
-  //       style={{ ...style }}
-  //     >
-  //       <Router>
-  //         <Home path="/" />
-  //       </Router>
-  //     </animated.div>
-  //   ),
-  //   ({ style }) => (
-  //     <animated.div
-  //       className={darkMode ? "dark-mode" : "light-mode"}
-  //       style={{ ...style }}
-  //     >
-  //       <Router>
-  //         <About path="about" />
-  //       </Router>
-  //     </animated.div>
-  //   ),
-  //   ({ style }) => (
-  //     <animated.div
-  //       className={darkMode ? "dark-mode" : "light-mode"}
-  //       style={{ ...style }}
-  //     >
-  //       <Projects />
-  //     </animated.div>
-  //   ),
-  //   ({ style }) => (
-  //     <animated.div
-  //       className={darkMode ? "dark-mode" : "light-mode"}
-  //       style={{ ...style }}
-  //     >
-  //       <Contact />
-  //     </animated.div>
-  //   ),
-  // ];
-
-  // const [index, set] = useState(0);
-
-  // const onClickRight = useCallback(() => set((state) => (state + 1) % 4), []);
-
-  // const onClickLeft = useCallback(
-  //   () => set((state) => (state <= 0 ? "" : state - 1) % 4),
-  //   []
-  // );
-
-  // const transitions = useTransition(index, (p) => p, {
-  //   from: { opacity: 0, transform: "translate3d(0,100%,0)" },
-  //   enter: { opacity: 1, transform: "translate3d(0%,0,0)" },
-  //   leave: { opacity: 0, transform: "translate3d(-50%,0,0)" },
-  // });
-
   const [darkMode, setDarkMode] = React.useState(false);
 
   return (
-    <section className={darkMode ? "dark-mode" : "light-mode"}>
+    <section className={darkMode ? "dark-mode " : "light-mode"}>
       {/* topright navigation  */}
       <nav className="navigation-bar">
         {/* <NavigationBar /> */}
@@ -144,6 +88,7 @@ export default function App() {
           <Projects path="projects" />
           <Contact path="contact" />
         </Router>
+
         <article
           className={
             darkMode ? "dark-mode-btn-holder-right" : "btn-holder-right"
