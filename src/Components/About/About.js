@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-
 const aboutText = [
   {
     id: 0,
@@ -25,15 +22,7 @@ const aboutText = [
         After graduating with an <br />
         <span className="p-after-fe-2">AAS in Web Development</span> I completed
         a 500 + hour full-stack Software Engineering coding boot camp at <br />
-        <span className="p-after-be-2">
-          General Assembly{" "}
-          <a
-            target="_blank"
-            href="https://profiles.generalassemb.ly/bruno-dasilva"
-          >
-            <FontAwesomeIcon icon={faCode} size="1x"></FontAwesomeIcon>
-          </a>
-        </span>
+        <span className="p-after-be-2">General Assembly </span>
       </p>
     ),
   },
