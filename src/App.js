@@ -10,7 +10,7 @@ import Contact from "./Components/Contact/Contact";
 import NavigationBar from "./Components/NavigationBar/NavigationBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCog,
+  faCode,
   faArrowUp,
   faArrowDown,
   faAdjust,
@@ -69,7 +69,7 @@ export default function App() {
             target="_blank"
             href="https://profiles.generalassemb.ly/bruno-dasilva"
           >
-            <FontAwesomeIcon icon={faCog} size="1x"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faCode} size="1x"></FontAwesomeIcon>
           </a>
         </p>
       </div>

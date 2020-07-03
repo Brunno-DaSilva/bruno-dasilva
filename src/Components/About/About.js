@@ -1,50 +1,76 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
+import { useTransition, animated, config } from "react-spring";
 
-class About extends Component {
-  render() {
-    return (
-      <div className="about-container">
-        <div className="about-left">
-          <div className="left-content">
-            <div>
-              <p className="about-left-p">
-                I'm a <span className="p-after">Front-End Developer</span> with
-                Full-Stack exposure and <br />
-                <span>
-                  6 years of experience in different IT-related fields.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="about-right">
-          <div className="right-content">
-            <div>
-              <p>
-                I am particularly passionate about my family, well designed,
-                clean coded-front-to-back- web applications, to serve poor
-                communities in my spare time and to drink coffee.{" "}
-              </p>
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-              <p>
-                A perfectly accomplished day for me is when I spend some time
-                with my son and wife, I learn something new, and when I
-                debug/develop something awesome, all of this accompanied with a
-                nice warm cup of coffee.{" "}
-              </p>
-              <p>
-                My previous experiences as a full-time missionary and 6+ years
-                in IT application support, not only reflects my passions for
-                technology and care for people but taught me how to approach
-                every situation and individual as unique and how to develop a
-                well-organized strategy to problem solve.
-              </p>
-            </div>
+const aboutText = [
+  {
+    id: 0,
+    text: (
+      <p className="about-left-p">
+        I'm a <span className="p-after-fe">Front-End Developer</span>
+        with{" "}
+        <span className="p-after-be">
+          Full-Stack <span id="expo">exposure</span>
+        </span>
+        <span>and 6 years of experience in different IT-related fields.</span>
+      </p>
+    ),
+  },
+  {
+    id: 1,
+    text: (
+      <p className="about-left-p-2">
+        After graduating with an <br />
+        <span className="p-after-fe-2">AAS in Web Development</span> I completed
+        a 500 + hour full-stack Software Engineering coding boot camp at <br />
+        <span className="p-after-be-2">
+          General Assembly{" "}
+          <a
+            target="_blank"
+            href="https://profiles.generalassemb.ly/bruno-dasilva"
+          >
+            <FontAwesomeIcon icon={faCode} size="1x"></FontAwesomeIcon>
+          </a>
+        </span>
+      </p>
+    ),
+  },
+];
+
+const About = () => {
+  const [index, set] = useState(0);
+  const transitions = useTransition(aboutText[index], (item) => item.id, {
+    from: { opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 1 },
+    config: config.molasses,
+  });
+
+  useEffect(
+    () => void setInterval(() => set((state) => (state + 1) % 2), 5000),
+    []
+  );
+
+  return (
+    <div className="about-container">
+      <div className="about-left">
+        <div className="left-content">
+          <div className="aboutText">
+            {transitions.map(({ item, props, key }) => (
+              <animated.div key={key} class="bg" style={{ ...props }}>
+                <div>{item.text}</div>
+              </animated.div>
+            ))}
           </div>
         </div>
       </div>
-    );
-  }
-}
+      <div className="about-right">
+        <div className="right-content"></div>
+      </div>
+    </div>
+  );
+};
 
 export default About;

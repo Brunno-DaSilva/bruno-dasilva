@@ -494,34 +494,97 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 0.3rem;
-  padding: 1rem;
 }
 
-.about-left-p {
+.about-left-p,
+#expo {
   text-align: left;
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  line-height: 4.5rem;
+  line-height: 5rem;
+}
+.about-left-p-2 {
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 4rem;
 }
 
-.p-after {
-  font-size: 3rem !important;
+.aboutText {
+  position: "absolute";
+  top: 50%;
+  max-width: 90%;
+  max-height: 60% !important;
+  overflow-x: hidden;
+}
+
+.p-after-fe,
+.p-after-be {
+  font-size: 2.6rem !important;
   font-weight: 800 !important;
 }
-.p-after::after {
+
+.p-after-fe-2,
+.p-after-be-2 {
+  font-size: 2.1rem !important;
+  font-weight: 800 !important;
+}
+
+.p-after-fe::after {
   content: "";
-  max-width: 29vw;
+  max-width: 22vw;
   height: 1px !important;
   background: #f1be6db6;
   display: block;
   padding: 0.2rem;
   z-index: -1;
-  margin-top: -1rem;
-  margin-left: 5.7rem;
+  margin-top: -1.8rem;
+  margin-left: 5rem;
 }
 
+.p-after-be::after {
+  content: "";
+  max-width: 10.5vw;
+  height: 1px !important;
+  background: #f1be6db6;
+  display: block;
+  padding: 0.2rem;
+  z-index: -1;
+  margin-top: -1.9rem;
+  margin-left: 4.5rem;
+}
+
+.p-after-fe-2::after {
+  content: "";
+  max-width: 24vw;
+  height: 1px !important;
+  background: #f1be6db6;
+  display: block;
+  padding: 0.2rem;
+  z-index: -1;
+  margin-top: -1.5rem;
+  margin-left: 0rem;
+}
+
+.p-after-be-2::after {
+  content: "";
+  max-width: 21vw;
+  height: 1px !important;
+  background: #f1be6db6;
+  display: block;
+  padding: 0.2rem;
+  z-index: -1;
+  margin-top: -1.5rem;
+  margin-left: -5rem;
+}
 .about-left-p span {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.about-left-p-2 span {
   text-align: left;
   font-size: 2rem;
   font-weight: 600;
