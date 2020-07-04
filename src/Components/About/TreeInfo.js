@@ -116,42 +116,52 @@ const TreeInfo = () => {
           />
           <Tree
             style={{ fontSize: "1.4rem" }}
-            name="Bachelor's Business Administration & Marketing, FACIPE- Brazil"
+            name="BSBA & Marketing, FACIPE- Brazil"
           />
         </Tree>
         <Tree name="Work Experience">
-          <Tree name="sub-subtree with children">
-            <Tree name="child 1" style={{ color: "#37ceff" }} />
-            <Tree name="child 2" style={{ color: "#37ceff" }} />
-            <Tree name="child 3" style={{ color: "#37ceff" }} />
-            <Tree name="custom content">
-              <div
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  height: 200,
-                  padding: 10,
-                }}
-              >
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    background: "black",
-                    borderRadius: 5,
-                  }}
-                >
-                  Bla Bla
-                </div>
-              </div>
-            </Tree>
+          <Tree
+            style={{ fontSize: "1.3rem" }}
+            name="Software Engineering Instructor Associate, General Assembly"
+          >
+            <Tree style={{ fontSize: "1.3rem" }} name="Feb 2020 - Current" />
           </Tree>
-
-          <Tree name="hello" />
+          <Tree
+            style={{ fontSize: "1.3rem" }}
+            name="SharePoint and Office365 Administrator, Tetra Pak"
+          >
+            <Tree style={{ fontSize: "1.3rem" }} name="May 2017 - Current" />
+          </Tree>
+          <Tree
+            style={{ fontSize: "1.3rem" }}
+            name="Data Analyst Hotel Support, Expedia"
+          >
+            <Tree name="Feb 2016 - May 2017" />
+          </Tree>
+          <Tree
+            style={{ fontSize: "1.3rem" }}
+            name="Subject Matter Expert Hotel Partner Support, Expedia"
+          >
+            <Tree style={{ fontSize: "1.3rem" }} name="Feb 2014 - Feb 2016" />
+          </Tree>
         </Tree>
 
         {/* End of the first Tree */}
-        <Tree name={<span>🙀 something something</span>} />
+
+        <Tree name="Getting Personal">
+          <Tree
+            style={{ fontSize: "1.4rem" }}
+            name="I served 2 and half years as a full-time NGO volunteer"
+          />
+          <Tree
+            style={{ fontSize: "1.4rem" }}
+            name="I love coffee, my family, coding, and soccer"
+          />
+          <Tree
+            style={{ fontSize: "1.4rem" }}
+            name="I love to travel the world, and enjoy the little things"
+          />
+        </Tree>
       </Tree>
     </>
   );
