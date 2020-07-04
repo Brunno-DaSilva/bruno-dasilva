@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 import { animated } from "react-spring";
 
 const Frame = styled("div")`
@@ -14,6 +14,9 @@ const Frame = styled("div")`
 
 const Title = styled("span")`
   vertical-align: middle;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
 `;
 
 const Content = styled(animated.div)`
@@ -25,11 +28,12 @@ const Content = styled(animated.div)`
 `;
 
 const toggle = {
-  width: "1em",
-  height: "1em",
+  width: "2em ",
+  height: "2em ",
   marginRight: 10,
   cursor: "pointer",
   verticalAlign: "middle",
+  fill: "#fca311",
 };
 
 export { Frame, Content, toggle, Title };
