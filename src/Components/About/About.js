@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTransition, animated, config } from "react-spring";
+import TreeInfo from "./TreeInfo";
 
 const aboutText = [
   {
@@ -56,7 +57,9 @@ const About = () => {
         </div>
       </div>
       <div className="about-right">
-        <div className="right-content"></div>
+        <div className="right-content">
+          <TreeInfo />
+        </div>
       </div>
     </div>
   );
