@@ -72,6 +72,12 @@ h3,
 h4 {
   color: var(--foreground);
 }
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  transition: 0.25ms;
+}
 
 #root {
   overflow: hidden !important;
@@ -286,6 +292,7 @@ h4 {
 #left-icons p a {
   text-decoration: none;
   color: var(--foreground);
+  transition: 0.5s;
 }
 
 #left-icons p a:hover {

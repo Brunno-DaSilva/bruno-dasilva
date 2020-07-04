@@ -1,6 +1,6 @@
 import React, { memo, useState } from "react";
 import { useSpring, a } from "react-spring";
-
+import { Link } from "@reach/router";
 import { useMeasure, usePrevious } from "./Helpers";
 import { Frame, Title, Content, toggle } from "./styles";
 import * as Icons from "./Icons";
@@ -75,64 +75,49 @@ const TreeInfo = () => {
           </Tree>
         </Tree>
         <Tree name="Development Experience">
-          <Tree name="sub-subtree with children">
-            <Tree name="child 1" style={{ color: "#37ceff" }} />
-            <Tree name="child 2" style={{ color: "#37ceff" }} />
-            <Tree name="child 3" style={{ color: "#37ceff" }} />
-            <Tree name="custom content">
-              <div
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  height: 200,
-                  padding: 10,
-                }}
-              >
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    background: "black",
-                    borderRadius: 5,
-                  }}
-                >
-                  Bla Bla
-                </div>
-              </div>
-            </Tree>
+          <Tree name="TechFy online Store">
+            <Tree name="Firebase" style={{ color: "#37ceff" }} />
+            <Tree name="ReactJS" style={{ color: "#37ceff" }} />
+            <Tree name="PayPall DEV Button" style={{ color: "#37ceff" }} />
+            <Link to="/projects">
+              <Tree name="Go to Projects" />
+            </Link>
           </Tree>
-
-          <Tree name="hello" />
+          <Tree name="Star Wars Heroes">
+            <Tree name="Full Stack" style={{ color: "#37ceff" }} />
+            <Tree name="MongoDB" style={{ color: "#37ceff" }} />
+            <Tree name="Express" style={{ color: "#37ceff" }} />
+            <Tree name="ReactJS" style={{ color: "#37ceff" }} />
+            <Tree name="NodeJS" style={{ color: "#37ceff" }} />
+            <Link to="/projects">
+              <Tree name="Go to Projects" />
+            </Link>
+          </Tree>
+          <Tree name="Hotel Reservation">
+            <Tree name="Full Stack" style={{ color: "#37ceff" }} />
+            <Tree name="Ruby" style={{ color: "#37ceff" }} />
+            <Tree name="Rails" style={{ color: "#37ceff" }} />
+            <Tree name="ReactJS" style={{ color: "#37ceff" }} />
+            <Tree name="PostgreSQL" style={{ color: "#37ceff" }} />
+            <Link to="/projects">
+              <Tree name="Go to Projects" />
+            </Link>
+          </Tree>
         </Tree>
         <Tree name="Education">
-          <Tree name="sub-subtree with children">
-            <Tree name="child 1" style={{ color: "#37ceff" }} />
-            <Tree name="child 2" style={{ color: "#37ceff" }} />
-            <Tree name="child 3" style={{ color: "#37ceff" }} />
-            <Tree name="custom content">
-              <div
-                style={{
-                  position: "relative",
-                  width: "100%",
-                  height: 200,
-                  padding: 10,
-                }}
-              >
-                <div
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    background: "black",
-                    borderRadius: 5,
-                  }}
-                >
-                  Bla Bla
-                </div>
-              </div>
-            </Tree>
-          </Tree>
+          <Tree
+            style={{ fontSize: "1.4rem" }}
+            name="Software Engineering Immersive, General Assembly"
+          />
 
-          <Tree name="hello" />
+          <Tree
+            style={{ fontSize: "1.4rem" }}
+            name="AAS-Electronic Business Development, Collin College"
+          />
+          <Tree
+            style={{ fontSize: "1.4rem" }}
+            name="Bachelor's Business Administration & Marketing, FACIPE- Brazil"
+          />
         </Tree>
         <Tree name="Work Experience">
           <Tree name="sub-subtree with children">
