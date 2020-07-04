@@ -83,6 +83,14 @@ h4 {
   height: 100vh;
 }
 
+#root::selection {
+  background: var(--foreground);
+}
+
+#root::-moz-selection {
+  background: var(--foreground);
+  color: var(--background);
+}
 .simple-trans-main > div {
   position: absolute;
 
@@ -602,4 +610,13 @@ h4 {
   align-items: flex-start;
   border-radius: 0.3rem;
   padding: 1rem;
+}
+
+/*------------------------
+=> Contact Page
+--------------------------*/
+
+.contact-title {
+  font-size: 8rem;
+  text-transform: uppercase;
 }
