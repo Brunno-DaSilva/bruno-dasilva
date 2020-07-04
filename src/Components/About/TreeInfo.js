@@ -43,7 +43,7 @@ const TreeInfo = () => {
     <>
       <Tree
         name="About ME 🙈🙉🙊"
-        style={{ color: "#37ceff", fontSize: "3rem" }}
+        style={{ color: "#fca311", fontSize: "3rem" }}
         defaultOpen
       >
         <Tree name="hello" />
