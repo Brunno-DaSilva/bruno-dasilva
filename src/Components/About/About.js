@@ -39,7 +39,7 @@ const About = () => {
   });
 
   useEffect(
-    () => void setInterval(() => set((state) => (state + 1) % 2), 5000),
+    () => void setInterval(() => set((state) => (state + 1) % 2), 10000),
     []
   );
 

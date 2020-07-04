@@ -18,7 +18,11 @@
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
     "resize-observer-polyfill": "1.5.1",
-    "styled-components": "4.2.0"
+    "styled-components": "4.2.0",
+    "lodash-es": "4.17.11",
+    "lodash-move": "1.1.1",
+    "react-with-gesture": "4.0.0",
+    "vec-la": "1.5.0"
   },
   "scripts": {
     "start": "react-scripts start start",

@@ -23,14 +23,15 @@ const Content = styled(animated.div)`
   will-change: transform, opacity, height;
   margin-left: 6px;
   padding: 0px 0px 0px 14px;
-  border-left: 1px dashed rgba(255, 255, 255, 0.4);
+  border-left: 1px dashed #9e9d9d;
   overflow: hidden;
 `;
 
 const toggle = {
-  width: "2em ",
-  height: "2em ",
-  marginRight: 10,
+  width: "1em",
+  height: "1em",
+  marginRight: 9,
+
   cursor: "pointer",
   verticalAlign: "middle",
   fill: "#fca311",
