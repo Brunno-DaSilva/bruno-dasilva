@@ -8,8 +8,8 @@ const Frame = styled("div")`
   white-space: nowrap;
   overflow-x: hidden;
   vertical-align: middle;
-  color: white;
-  fill: white;
+  color: #545454;
+  fill: #fca311 !important;
 `;
 
 const Title = styled("span")`

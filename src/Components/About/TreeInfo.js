@@ -41,7 +41,11 @@ const Tree = memo(({ children, name, style, defaultOpen = false }) => {
 const TreeInfo = () => {
   return (
     <>
-      <Tree name="main" defaultOpen>
+      <Tree
+        name="About ME 🙈🙉🙊"
+        style={{ color: "#37ceff", fontSize: "3rem" }}
+        defaultOpen
+      >
         <Tree name="hello" />
         <Tree name="subtree with children">
           <Tree name="hello" />
