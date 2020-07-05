@@ -27,6 +27,16 @@ const aboutText = [
       </p>
     ),
   },
+  {
+    id: 2,
+    text: (
+      <p className="about-left-p-2">
+        Now, I'm working at General Assembly as <br />
+        <span className="p-after-fe-2">Instructor Associate</span> for the
+        Software Engineering Immersive (SEI) Remote Courses. <br />
+      </p>
+    ),
+  },
 ];
 
 const About = () => {
@@ -39,7 +49,7 @@ const About = () => {
   });
 
   useEffect(
-    () => void setInterval(() => set((state) => (state + 1) % 2), 10000),
+    () => void setInterval(() => set((state) => (state + 1) % 3), 8000),
     []
   );
 
