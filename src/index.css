@@ -12,9 +12,9 @@
   --foreground: var(--title-light-gray-color);
 }
 
-/*///////////////////////////////////////
-// General Dark and Light Mode classes 
-///////////////////////////////////////*/
+/*=======================================
+==> General Dark and Light Mode classes 
+=========================================*/
 
 .dark-mode {
   /* background: linear-gradient(to top left, #000000, #545454) !important;
@@ -166,9 +166,9 @@ a {
   color: var(--gold-highlight-color);
 }
 
-/*///////////////////////////////////////
-//  LightMode Top-Left-logo 
-///////////////////////////////////////*/
+/*=======================================
+==>  LightMode Top-Left-logo 
+=========================================*/
 #left-logo {
   position: absolute !important;
   top: 0;
@@ -208,13 +208,13 @@ a {
   margin: 0.5rem;
   margin-top: 3rem;
 }
-/*///////////////////////////////////////
-//  END - LightMode Top-Left-logo 
-///////////////////////////////////////*/
+/*=======================================
+==>  END - LightMode Top-Left-logo 
+=========================================*/
 
-/*///////////////////////////////////////
-//  DarkMode Top-Left-logo 
-///////////////////////////////////////*/
+/*=======================================
+==>  DarkMode Top-Left-logo 
+=========================================*/
 
 #dark-mode-left-logo {
   position: absolute !important;
@@ -257,13 +257,13 @@ a {
   margin-top: 3rem;
 }
 
-/*///////////////////////////////////////
-//  END - DarkMode Top-Left-logo 
-///////////////////////////////////////*/
+/*=======================================
+==>  END - DarkMode Top-Left-logo 
+=========================================*/
 
-/*///////////////////////////////////////
-//  LightMode Bottom-Left-Icons 
-///////////////////////////////////////*/
+/*=======================================
+==>  LightMode Bottom-Left-Icons 
+=========================================*/
 
 #left-icons {
   position: absolute !important;
@@ -299,13 +299,13 @@ a {
   color: var(--gold-highlight-color);
 }
 
-/*///////////////////////////////////////
-//  END -LightMode Bottom-Left-Icons 
-///////////////////////////////////////*/
+/*=======================================
+==>  END -LightMode Bottom-Left-Icons 
+=========================================*/
 
-/*///////////////////////////////////////
-//  DarkMode Bottom-Left-Icons 
-///////////////////////////////////////*/
+/*=======================================
+==>  DarkMode Bottom-Left-Icons 
+=========================================*/
 
 #dark-mode-left-icons {
   position: absolute !important;
@@ -339,13 +339,13 @@ a {
   color: var(--gold-highlight-color);
 }
 
-/*///////////////////////////////////////
-//  END -DarkMode Bottom-Left-Icons 
-///////////////////////////////////////*/
+/*=======================================
+==>  END -DarkMode Bottom-Left-Icons 
+=========================================*/
 
-/*///////////////////////////////////////
-//  LightMode Right-Bottom-Buttons  
-///////////////////////////////////////*/
+/*=======================================
+==>  LightMode Right-Bottom-Buttons  
+=========================================*/
 
 .btn-move-right {
   position: absolute;
@@ -389,13 +389,13 @@ a {
   color: var(--gold-highlight-color);
 }
 
-/*///////////////////////////////////////
-//  END - LightMode Right-Bottom-Buttons  
-///////////////////////////////////////*/
+/*=======================================
+==>  END - LightMode Right-Bottom-Buttons  
+=========================================*/
 
-/*///////////////////////////////////////
-//  DarkMode Right-Bottom-Buttons  
-///////////////////////////////////////*/
+/*=======================================
+==>  DarkMode Right-Bottom-Buttons  
+=========================================*/
 
 .dark-mode-btn-move-right {
   position: absolute;
@@ -439,10 +439,13 @@ a {
   color: var(--gold-highlight-color);
 }
 
-/*///////////////////////////////////////
-//  END - DarkMode Right-Bottom-Buttons  
-///////////////////////////////////////*/
+/*=======================================
+==>  END - DarkMode Right-Bottom-Buttons  
+=========================================*/
 
+/*=======================================
+==>       Project Container 
+=========================================*/
 .projects-container {
   display: flex;
   justify-content: flex-start;
@@ -457,28 +460,144 @@ a {
 .card-three,
 .card-four {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
   width: 50%;
   height: 50%;
-  border-radius: 0.3rem;
+  /* border-radius: 0.3rem; */
 }
 
 .card-two,
 .card-three {
-  display: flex;
-  background-color: var(--main-dark-gray-bg);
+  background-color: var(--foreground);
+  border: 1px solid var(--background);
+  overflow-x: hidden;
 }
 
 .card-one,
 .card-four {
-  display: flex;
-  background-color: var(--main-light-gray-bg);
+  background-color: var(--background);
+  border: 1px solid var(--foreground);
+  overflow-x: hidden;
 }
 
+.card-one .projects-img-wrapper,
+.card-one .projects-details {
+  display: grid;
+  justify-items: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+}
+.card-one .projects-img-wrapper img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.details-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: var(--background) !important;
+}
+
+.details-title,
+.details-desc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details-title h1 {
+  color: var(--foreground);
+  font-size: 1.3em;
+}
+.details-desc {
+  padding: 0 0.4em;
+  color: var(--foreground);
+}
+.details-desc p {
+  line-height: 1.5rem;
+  font-size: 1em;
+}
+
+.details-featured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--foreground);
+}
+
+.featured-left,
+.featured-center,
+.featured-right {
+  width: 30%;
+}
+
+.featured-left p,
+.featured-center p,
+.featured-right p {
+  font-size: 0.8rem;
+}
+
+.details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.details-btn-github,
+.details-btn-demo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-btn-github button,
+.details-btn-demo button {
+  width: 70%;
+  height: 2rem;
+  background: var(--gold-highlight-color);
+  border: none;
+}
+
+.details-btn-github button a,
+.details-btn-demo button a {
+  color: var(--main-light-gray-bg);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  transition: ease-in-out 0.5s;
+}
+
+.details-btn-github button a:hover,
+.details-btn-demo button a:hover {
+  color: var(--dark-mode-bg) !important;
+  background: transparent !important;
+}
+
+/*=======================================
+==>  END - Project Container 
+=========================================*/
+
 /*====================
-// About Component  
+==> About Component  
 ====================*/
 
 .about-container {
