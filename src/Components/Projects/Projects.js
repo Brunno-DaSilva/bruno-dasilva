@@ -70,7 +70,13 @@ class Projects extends Component {
             <div className="projects-details">
               <div className="details-wrapper">
                 <div className="details-title">
-                  <h1>Zilnai Hotel Reservation</h1>
+                  <h1>
+                    Full-stack MERN E-Commerce site. Fully functional and
+                    interactive, this web application allows users to see a list
+                    of products, see details about each product, add them to the
+                    cart, increment the number of items and buy the products
+                    utilizing PayPal.
+                  </h1>
                 </div>
                 <div className="details-desc">
                   <p>
@@ -126,27 +132,28 @@ class Projects extends Component {
             <div className="projects-details">
               <div className="details-wrapper">
                 <div className="details-title">
-                  <h1>Zilnai Hotel Reservation</h1>
+                  <h1>Star Wars Heroes App</h1>
                 </div>
                 <div className="details-desc">
                   <p>
-                    A full-stack web application built with the React on Rails
-                    stack. A CRUD application which provides users with a option
-                    to reserve, delete, and update a room
+                    A full-stack web application. Users can view and edit
+                    information about of the most iconic Star Wars heroes.
+                    Additionally, users can create, edit, and delete their own
+                    characters.
                   </p>
                 </div>
                 <div className="details-featured">
                   <div className="featured-left">
                     <p>React</p>
-                    <p>Ruby</p>
-                  </div>
-                  <div className="featured-center">
-                    <p>Rails</p>
                     <p>JSX</p>
                   </div>
+                  <div className="featured-center">
+                    <p>MongoDB</p>
+                    <p>ExpressJS</p>
+                  </div>
                   <div className="featured-right">
-                    <p>PostgreSQL</p>
-                    <p>React Router</p>
+                    <p>SWAPI-API</p>
+                    <p>NodeJs</p>
                   </div>
                 </div>
                 <div className="details-btn">
