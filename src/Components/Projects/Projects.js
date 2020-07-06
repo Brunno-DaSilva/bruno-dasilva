@@ -22,20 +22,7 @@ class Projects extends Component {
                     to reserve, delete, and update a room
                   </p>
                 </div>
-                <div className="details-featured">
-                  <div className="featured-left">
-                    <p>React</p>
-                    <p>Ruby</p>
-                  </div>
-                  <div className="featured-center">
-                    <p>Rails</p>
-                    <p>JSX</p>
-                  </div>
-                  <div className="featured-right">
-                    <p>PostgreSQL</p>
-                    <p>React Router</p>
-                  </div>
-                </div>
+
                 <div className="details-btn">
                   <div className="details-btn-github">
                     <button>
@@ -80,20 +67,6 @@ class Projects extends Component {
                     items and buy the products utilizing PayPal.
                   </p>
                 </div>
-                <div className="details-featured">
-                  <div className="featured-left">
-                    <p>React</p>
-                    <p>ExpressJS</p>
-                  </div>
-                  <div className="featured-center">
-                    <p>NodeJS</p>
-                    <p>MongoDB</p>
-                  </div>
-                  <div className="featured-right">
-                    <p>PayPal Button</p>
-                    <p>Firebase</p>
-                  </div>
-                </div>
                 <div className="details-btn">
                   <div className="details-btn-github">
                     <button>
@@ -137,20 +110,6 @@ class Projects extends Component {
                     characters.
                   </p>
                 </div>
-                <div className="details-featured">
-                  <div className="featured-left">
-                    <p>React</p>
-                    <p>JSX</p>
-                  </div>
-                  <div className="featured-center">
-                    <p>MongoDB</p>
-                    <p>ExpressJS</p>
-                  </div>
-                  <div className="featured-right">
-                    <p>SWAPI-API</p>
-                    <p>NodeJs</p>
-                  </div>
-                </div>
                 <div className="details-btn">
                   <div className="details-btn-github">
                     <button>
@@ -193,20 +152,7 @@ class Projects extends Component {
                     front-end interface, as our back-end is 100% autonomous.
                   </p>
                 </div>
-                <div className="details-featured">
-                  <div className="featured-left">
-                    <p>React</p>
-                    <p>ExpressJS</p>
-                  </div>
-                  <div className="featured-center">
-                    <p>MongoDB</p>
-                    <p>NodeJs</p>
-                  </div>
-                  <div className="featured-right">
-                    <p>Heroku</p>
-                    <p>GitHub</p>
-                  </div>
-                </div>
+
                 <div className="details-btn">
                   <div className="details-btn-github">
                     <button>
