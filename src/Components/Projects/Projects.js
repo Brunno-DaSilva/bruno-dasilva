@@ -70,33 +70,28 @@ class Projects extends Component {
             <div className="projects-details">
               <div className="details-wrapper">
                 <div className="details-title">
-                  <h1>
-                    Full-stack MERN E-Commerce site. Fully functional and
-                    interactive, this web application allows users to see a list
-                    of products, see details about each product, add them to the
-                    cart, increment the number of items and buy the products
-                    utilizing PayPal.
-                  </h1>
+                  <h1>Techfy Online Store</h1>
                 </div>
                 <div className="details-desc">
                   <p>
-                    A full-stack web application built with the React on Rails
-                    stack. A CRUD application which provides users with a option
-                    to reserve, delete, and update a room
+                    Fully functional and interactive, this web application
+                    allows users to see a list of products, see details about
+                    each product, add them to the cart, increment the number of
+                    items and buy the products utilizing PayPal.
                   </p>
                 </div>
                 <div className="details-featured">
                   <div className="featured-left">
                     <p>React</p>
-                    <p>Ruby</p>
+                    <p>ExpressJS</p>
                   </div>
                   <div className="featured-center">
-                    <p>Rails</p>
-                    <p>JSX</p>
+                    <p>NodeJS</p>
+                    <p>MongoDB</p>
                   </div>
                   <div className="featured-right">
-                    <p>PostgreSQL</p>
-                    <p>React Router</p>
+                    <p>PayPal Button</p>
+                    <p>Firebase</p>
                   </div>
                 </div>
                 <div className="details-btn">
@@ -114,7 +109,7 @@ class Projects extends Component {
                     <button>
                       <a
                         target="_blank"
-                        href="https://github.com/DaSilvaBrunoTexas"
+                        href="https://online-store-techfy.herokuapp.com/home"
                       >
                         Demo
                       </a>
@@ -171,7 +166,7 @@ class Projects extends Component {
                     <button>
                       <a
                         target="_blank"
-                        href="https://github.com/DaSilvaBrunoTexas"
+                        href="https://star-wars-heroes-app.herokuapp.com/"
                       >
                         Demo
                       </a>
