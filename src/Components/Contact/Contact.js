@@ -55,7 +55,9 @@ const ContactForm = () => {
   };
 
   return (
-    <>
+    <section>
+      <h1 className="contact-title">Say Hi! 👋</h1>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -87,7 +89,7 @@ const ContactForm = () => {
         ></textarea>
         <button type="submit">Submit</button>
       </form>
-    </>
+    </section>
   );
 };
 

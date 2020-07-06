@@ -452,7 +452,6 @@ a {
   align-items: center;
   width: 85vw;
   height: 70vh;
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
 }
 
 .card-one,
@@ -467,7 +466,8 @@ a {
   height: 47%;
   background-color: var(--background);
   overflow-x: hidden;
-  border: 1px solid #9e9d9d;
+  /* border: 1px solid #9e9d9d; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .card-one,
@@ -516,6 +516,7 @@ a {
 .details-desc p {
   line-height: 1.5rem;
   font-size: 1em;
+  padding: 1rem;
 }
 
 .details-featured {
@@ -525,18 +526,6 @@ a {
   align-items: center;
   width: 100%;
   color: var(--foreground);
-}
-
-.featured-left,
-.featured-center,
-.featured-right {
-  width: 30%;
-}
-
-.featured-left p,
-.featured-center p,
-.featured-right p {
-  font-size: 0.8rem;
 }
 
 .details-btn {
@@ -556,7 +545,7 @@ a {
 
 .details-btn-github,
 .details-btn-demo {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -598,7 +587,6 @@ a {
   align-items: center;
   width: 80vw;
   height: 70vh;
-  /* border: 1px solid var(--title-light-gray-color); */
   color: var(--foreground);
 }
 
