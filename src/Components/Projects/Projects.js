@@ -182,27 +182,27 @@ class Projects extends Component {
             <div className="projects-details">
               <div className="details-wrapper">
                 <div className="details-title">
-                  <h1>Zilnai Hotel Reservation</h1>
+                  <h1>MERN Step-By-Step</h1>
                 </div>
                 <div className="details-desc">
                   <p>
-                    A full-stack web application built with the React on Rails
-                    stack. A CRUD application which provides users with a option
-                    to reserve, delete, and update a room
+                    Step-by-step guide on how to build a simple MERN stack
+                    application. You could use this backend as a model to any
+                    front-end interface, as our back-end is 100% autonomous.
                   </p>
                 </div>
                 <div className="details-featured">
                   <div className="featured-left">
                     <p>React</p>
-                    <p>Ruby</p>
+                    <p>ExpressJS</p>
                   </div>
                   <div className="featured-center">
-                    <p>Rails</p>
-                    <p>JSX</p>
+                    <p>MongoDB</p>
+                    <p>NodeJs</p>
                   </div>
                   <div className="featured-right">
-                    <p>PostgreSQL</p>
-                    <p>React Router</p>
+                    <p>Heroku</p>
+                    <p>GitHub</p>
                   </div>
                 </div>
                 <div className="details-btn">
@@ -210,7 +210,7 @@ class Projects extends Component {
                     <button>
                       <a
                         target="_blank"
-                        href="https://github.com/DaSilvaBrunoTexas"
+                        href="https://github.com/DaSilvaBrunoTexas/MERN-STEP-BY-STEP"
                       >
                         GitHub
                       </a>
@@ -220,7 +220,7 @@ class Projects extends Component {
                     <button>
                       <a
                         target="_blank"
-                        href="https://github.com/DaSilvaBrunoTexas"
+                        href="https://todo-app-with-mern-stack.herokuapp.com/"
                       >
                         Demo
                       </a>

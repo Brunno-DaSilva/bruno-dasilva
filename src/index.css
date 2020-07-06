@@ -447,7 +447,7 @@ a {
 =========================================*/
 .projects-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   width: 85vw;
@@ -465,17 +465,7 @@ a {
   align-items: center;
   width: 50%;
   height: 50%;
-
-  /* border-radius: 0.3rem; */
-}
-
-.card-two,
-.card-three,
-.card-one,
-.card-four {
   background-color: var(--background);
-  /* border: 1px solid #9e9d9d !important; */
-
   overflow-x: hidden;
 }
 
