@@ -804,7 +804,7 @@ a {
   color: var(--dark-mode-bg) !important;
 }
 
-.alert {
+/* .alert {
   text-align: center;
   padding: 10px;
   background: #118506d3;
@@ -815,7 +815,7 @@ a {
 .error i {
   color: #f71212d5;
   font-size: 6px;
-}
+} */
 
 @media (max-width: 750px) {
   .wrapper-contact {
