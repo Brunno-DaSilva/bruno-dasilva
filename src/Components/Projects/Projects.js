@@ -152,8 +152,8 @@ const Projects = () => {
               <div className="details-desc">
                 <p>
                   Step-by-step guide on how to build a simple MERN stack
-                  application. You could use this backend as a model to any
-                  front-end interface, as our back-end is 100% autonomous.
+                  application. I have built this guide to assist my students to
+                  practice some core concepts of the MERN stack.
                 </p>
               </div>
 

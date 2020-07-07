@@ -1,20 +1,6 @@
 import React, { useState } from "react";
 import { Axios, db } from "../../firebase/firebaseConfig";
 
-// class Contact extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <h1 className="contact-title">Say Hi! 👋</h1>
-
-//         <div>Contact Form</div>
-//       </div>
-//     );
-//   }
-// }
-
-// export default Contact;
-
 const ContactForm = () => {
   const [formData, setFormData] = useState({});
 
@@ -55,40 +41,77 @@ const ContactForm = () => {
   };
 
   return (
-    <section>
-      <h1 className="contact-title">Say Hi! 👋</h1>
-
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          onChange={updateInput}
-          value={formData.name || ""}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={updateInput}
-          value={formData.email || ""}
-        />
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          onChange={updateInput}
-          value={formData.subject || ""}
-        />
-        <textarea
-          type="text"
-          name="message"
-          placeholder="Message"
-          onChange={updateInput}
-          value={formData.message || ""}
-        ></textarea>
-        <button type="submit">Submit</button>
-      </form>
+    <section id="contactme">
+      <h1 className="contact-title">Say Hi!</h1>
+      <div className="container-contact">
+        <div className="wrapper-contact">
+          <div className="contact">
+            <div className="alert">Your Message has been sent</div>
+            <form id="contactForm" onSubmit={handleSubmit}>
+              <p>
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Full Name"
+                  id="form-name"
+                  required=""
+                  onChange={updateInput}
+                  value={formData.name || ""}
+                />
+                <span className="error">
+                  <i className="fa fa-circle"></i>
+                </span>
+              </p>
+              <br />
+              <p>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="E-mail Address"
+                  id="form-email"
+                  required=""
+                  onChange={updateInput}
+                  value={formData.email || ""}
+                />
+                <span className="error">
+                  <i className="fa fa-circle"></i>
+                </span>
+              </p>
+              <br />
+              <p>
+                <input
+                  name="subject"
+                  type="text"
+                  placeholder="Subject"
+                  id="form-subject"
+                  onChange={updateInput}
+                  value={formData.subject || ""}
+                />
+              </p>
+              <p>
+                <textarea
+                  name="message"
+                  type="text"
+                  placeholder="Message"
+                  onChange={updateInput}
+                  value={formData.message || ""}
+                  rows="4"
+                  id="form-message"
+                  required=""
+                ></textarea>
+                <span className="error">
+                  <i className="fas fa-circle"></i>
+                </span>
+              </p>
+              <br />
+              <p id="btn-form">
+                <input type="submit" name="submit" />
+              </p>
+              <br />
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

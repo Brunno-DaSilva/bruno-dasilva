@@ -295,6 +295,7 @@ a {
 }
 
 #left-icons p a:hover {
+  cursor: pointer;
   color: var(--gold-highlight-color);
 }
 
@@ -335,6 +336,7 @@ a {
 }
 
 #dark-mode-left-icons p a:hover {
+  cursor: pointer;
   color: var(--gold-highlight-color);
 }
 
@@ -385,6 +387,7 @@ a {
 
 .btn-move-left:hover,
 .btn-move-right:hover {
+  cursor: pointer;
   color: var(--gold-highlight-color);
 }
 
@@ -435,6 +438,7 @@ a {
 
 .dark-mode-btn-move-left:hover,
 .btn-move-right:hover {
+  cursor: pointer;
   color: var(--gold-highlight-color);
 }
 
@@ -451,7 +455,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   width: 85vw;
-  height: 70vh;
+  height: 75vh;
 }
 
 .card-one,
@@ -463,10 +467,9 @@ a {
   flex-wrap: wrap;
   align-items: center;
   width: 47%;
-  height: 47%;
+  height: 48%;
   background-color: var(--background);
   overflow-x: hidden;
-  /* border: 1px solid #9e9d9d; */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -569,6 +572,7 @@ a {
 
 .details-btn-github button a:hover,
 .details-btn-demo button a:hover {
+  cursor: pointer;
   color: var(--dark-mode-bg) !important;
   background: transparent !important;
 }
@@ -650,7 +654,8 @@ a {
   content: "";
   max-width: 22vw;
   height: 1px !important;
-  background: #f1be6db6;
+  background: #dd9116b6;
+  border-radius: 1rem;
   display: block;
   padding: 0.2rem;
   z-index: -1;
@@ -662,7 +667,8 @@ a {
   content: "";
   max-width: 10.5vw;
   height: 1px !important;
-  background: #f1be6db6;
+  background: #dd9116b6;
+  border-radius: 1rem;
   display: block;
   padding: 0.2rem;
   z-index: -1;
@@ -674,7 +680,8 @@ a {
   content: "";
   max-width: 24vw;
   height: 1px !important;
-  background: #f1be6db6;
+  background: #dd9116b6;
+  border-radius: 1rem;
   display: block;
   padding: 0.2rem;
   z-index: -1;
@@ -686,7 +693,8 @@ a {
   content: "";
   max-width: 21vw;
   height: 1px !important;
-  background: #f1be6db6;
+  background: #dd9116b6;
+  border-radius: 1rem;
   display: block;
   padding: 0.2rem;
   z-index: -1;
@@ -707,9 +715,7 @@ a {
 .right-content {
   width: 99%;
   height: 100%;
-  /* background-color: var(--title-dark-gray-color); */
   color: var(--background);
-  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -721,8 +727,109 @@ a {
 /*------------------------
 => Contact Page
 --------------------------*/
-
+#contactme {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  height: 70vh;
+}
 .contact-title {
   font-size: 8rem;
   text-transform: uppercase;
+  margin: 0 !important;
+  letter-spacing: 0.4rem;
+}
+.contact-title::after {
+  content: "";
+  max-width: 23.5vw;
+  height: 1px !important;
+  background: #dd9116b6;
+  border-radius: 1rem;
+  display: block;
+  padding: 0.7rem;
+  z-index: -1;
+  margin-top: -2.9rem;
+  margin-left: 0rem;
+}
+
+.container-contact {
+  max-width: 70%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper-contact {
+  display: grid;
+  grid-template-columns: 1fr !important;
+}
+
+.contact {
+  background: transparent;
+  width: 25vw;
+  padding: 1rem;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+  background-color: transparent;
+}
+.contact form input,
+.contact form textarea {
+  width: 70%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid var(--foreground);
+  color: var(--foreground);
+}
+
+#btn-form input {
+  border: none;
+  width: 30%;
+  height: auto;
+  padding: 1rem;
+  background: var(--title-light-gray-color);
+  color: var(--main-light-gray-bg);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: ease-in-out 0.5s;
+}
+
+#btn-form input:hover {
+  cursor: pointer;
+  color: var(--dark-mode-bg) !important;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background: #118506d3;
+  color: #fff;
+  display: none;
+}
+
+.error i {
+  color: #f71212d5;
+  font-size: 6px;
+}
+
+@media (max-width: 750px) {
+  .wrapper-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper-contact > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
 }
