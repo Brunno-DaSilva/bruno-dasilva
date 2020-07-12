@@ -21,6 +21,7 @@ import {
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons";
 import "./index.css";
+
 export default function App() {
   const [darkMode, setDarkMode] = React.useState(false);
 
@@ -40,11 +41,14 @@ export default function App() {
       </nav>
 
       {/* leftTop brunoName logo */}
+
       <div id={darkMode ? "dark-mode-left-logo" : "left-logo"}>
-        <p>
-          Bruno <br />
-          <span>DaSilva</span>
-        </p>
+        <Link to="about">
+          <p>
+            Bruno <br />
+            <span>DaSilva</span>
+          </p>
+        </Link>
       </div>
 
       {/* Leftbottom icons  */}

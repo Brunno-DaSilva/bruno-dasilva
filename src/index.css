@@ -58,11 +58,6 @@ body {
   font-family: "Open Sans", sans-serif;
   background: var(--background);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   cursor: default;
 }
 
@@ -78,14 +73,20 @@ a {
   transition: 0.25ms;
 }
 
+a:hover {
+  color: var(--gold-highlight-color);
+}
+
 #root {
   overflow: hidden !important;
   overflow-y: hidden !important;
   overflow-x: hidden !important;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 99.9%;
   height: 100vh;
+  border: 1px solid red;
+  will-change: transform, opacity;
 }
 
 #root::selection {
@@ -98,7 +99,6 @@ a {
 }
 .simple-trans-main > div {
   position: absolute;
-
   width: 100%;
   height: 100vh;
   display: flex;
@@ -142,6 +142,7 @@ a {
   flex-direction: row;
   z-index: 99;
   box-sizing: border-box;
+  padding: 0.2rem;
 }
 
 .navigation-bar p,
@@ -149,6 +150,7 @@ a {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--foreground) !important;
   border: none;
@@ -158,11 +160,13 @@ a {
   margin-top: 3.5rem;
   list-style: none;
   text-decoration: none;
+  transition: 0.5s;
 }
 
+.navigation-bar a:hover,
 .navigation-bar p:hover {
   cursor: pointer;
-  color: var(--gold-highlight-color);
+  box-shadow: inset 0 -5px 0 0 #e49312;
 }
 
 /*=======================================
@@ -832,4 +836,36 @@ a {
   .brand {
     text-align: left;
   }
+}
+
+/*
+*
+*********************************************************************
+*   Media Query Portfolio Addition max-width: 768px                 *
+*********************************************************************  
+*
+*
+*/
+@media screen and  (max-width:1408px) {
+    body {
+    color: red;
+  }
+}
+/*
+  *
+  *
+  *
+  *
+  */
+/*
+  *
+  *********************************************************************
+  *=====END Media Query Portfolio Addition max-width: 768px           *
+  *********************************************************************  
+  *
+  *
+  */
+@media screen and  (max-width: 460px) {
+}
+@media screen and  (max-width: 768px) {
 }
