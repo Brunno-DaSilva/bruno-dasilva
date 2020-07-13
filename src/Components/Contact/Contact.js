@@ -42,12 +42,16 @@ const ContactForm = () => {
 
   return (
     <section id="contactme">
-      <h1 className="contact-title">Say Hi!</h1>
-      <div className="container-contact">
+      <h1 className="contact-title animated fadeInLeft">Say Hi!</h1>
+      <div className="container-contact animated fadeInRight">
         <div className="wrapper-contact">
-          <div className="contact">
+          <div className="contact ">
             <div className="alert">Your Message has been sent</div>
-            <form id="contactForm" onSubmit={handleSubmit}>
+            <form
+              className="animated delay-1s fadeInRight"
+              id="contactForm"
+              onSubmit={handleSubmit}
+            >
               <p>
                 <input
                   name="name"

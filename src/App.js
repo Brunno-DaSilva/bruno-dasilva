@@ -28,7 +28,7 @@ export default function App() {
   return (
     <section className={darkMode ? "dark-mode " : "light-mode"}>
       {/* topright navigation  */}
-      <nav className="navigation-bar">
+      <nav className="navigation-bar animated fadeInRight">
         {/* <NavigationBar /> */}
         <NavigationBar />
         <p>
@@ -42,7 +42,10 @@ export default function App() {
 
       {/* leftTop brunoName logo */}
 
-      <div id={darkMode ? "dark-mode-left-logo" : "left-logo"}>
+      <div
+        className="animated fadeInLeft"
+        id={darkMode ? "dark-mode-left-logo" : "left-logo"}
+      >
         <Link to="about">
           <p>
             Bruno <br />
@@ -52,7 +55,10 @@ export default function App() {
       </div>
 
       {/* Leftbottom icons  */}
-      <div id={darkMode ? "dark-mode-left-icons" : "left-icons"}>
+      <div
+        id={darkMode ? "dark-mode-left-icons" : "left-icons"}
+        className="animated fadeInLeft"
+      >
         <p>
           <a target="_blank" href="https://github.com/DaSilvaBrunoTexas">
             <FontAwesomeIcon icon={faGithubAlt} size="1x"></FontAwesomeIcon>

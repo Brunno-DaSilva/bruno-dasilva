@@ -6,7 +6,7 @@ import logo from "./images/blogo-gray.png";
 
 const Home = () => {
   return (
-    <section className="section-container">
+    <section className="section-container animated delay-1s fadeInUp">
       <img src={logo} />
       <p className="home-logo-p">Front-end Development</p>
     </section>

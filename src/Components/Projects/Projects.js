@@ -9,12 +9,12 @@ const Projects = () => {
   return (
     <div>
       <div className="projects-container" ref={(el) => (app = el)}>
-        <div className="card-one">
-          <div className="projects-img-wrapper">
+        <div className="card-one animated fadeInLeft">
+          <div className="projects-img-wrapper animated delay-1s fadeInLeft">
             <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1581091889/imgs_starwars/imgs/Zilnai-logo2_xazqwf.png" />
           </div>
 
-          <div className="projects-details">
+          <div className="projects-details animated delay-1s fadeInLeft">
             <div className="details-wrapper">
               <div className="details-title">
                 <h1>Zilnai Hotel Reservation</h1>
@@ -53,12 +53,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="card-two">
-          <div className="projects-img-wrapper">
+        <div className="card-two animated fadeInRight">
+          <div className="projects-img-wrapper animated delay-1s fadeInRight">
             <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997580/imgs_starwars/EcommerceProject/Add_a_heading_ktzhqh.png" />
           </div>
 
-          <div className="projects-details">
+          <div className="projects-details animated delay-1s fadeInRight">
             <div className="details-wrapper">
               <div className="details-title">
                 <h1>Techfy Online Store</h1>
@@ -97,13 +97,13 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="card-three">
-          <div className="projects-img-wrapper">
+        <div className="card-three animated fadeInLeft">
+          <div className="projects-img-wrapper animated delay-1s fadeInLeft">
             <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1578630368/imgs_starwars/imgs/homepage_keiigd_mvgav0.png" />
           </div>
 
           <div className="projects-details">
-            <div className="details-wrapper">
+            <div className="details-wrapper animated delay-1s fadeInLeft">
               <div className="details-title">
                 <h1>Star Wars Heroes App</h1>
               </div>
@@ -140,12 +140,12 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="card-four">
-          <div className="projects-img-wrapper">
+        <div className="card-four animated fadeInRight">
+          <div className="projects-img-wrapper animated delay-1s fadeInRight">
             <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593998725/Logo/mern_logo_ef0zsr.png" />
           </div>
 
-          <div className="projects-details">
+          <div className="projects-details animated delay-1s fadeInRight">
             <div className="details-wrapper">
               <div className="details-title">
                 <h1>MERN Step-By-Step</h1>

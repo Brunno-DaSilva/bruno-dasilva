@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 class NavigationBar extends Component {
   render() {
     return (
-      <nav className="navigation-bar">
+      <nav className="navigation-bar ">
         <p>
           <Link to="/">Home</Link>
         </p>
