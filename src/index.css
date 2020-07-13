@@ -105,7 +105,6 @@ a:hover {
   align-items: center;
   will-change: transform, opacity;
   background: var(--background) !important;
-  border: 1px solid green;
 }
 
 .home-logo-p {

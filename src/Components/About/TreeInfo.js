@@ -133,7 +133,7 @@ const TreeInfo = () => {
             <Link to="/projects">
               <Tree
                 name="Go to Projects"
-                style={{ color: "#26b2e0", fontSize: "1.3rem" }}
+                style={{ color: "#e493129c", fontSize: "1.3rem" }}
               />
             </Link>
           </Tree>
@@ -159,7 +159,10 @@ const TreeInfo = () => {
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
             <Link to="/projects">
-              <Tree name="Go to Projects" />
+              <Tree
+                name="Go to Projects"
+                style={{ color: "#e493129c", fontSize: "1.3rem" }}
+              />
             </Link>
           </Tree>
           <Tree name="Zilnai Hotel Reservation" style={{ fontSize: "1.4rem" }}>
@@ -184,7 +187,10 @@ const TreeInfo = () => {
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
             <Link to="/projects">
-              <Tree name="Go to Projects" />
+              <Tree
+                name="Go to Projects"
+                style={{ color: "#e493129c", fontSize: "1.3rem" }}
+              />
             </Link>
           </Tree>
         </Tree>
