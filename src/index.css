@@ -105,6 +105,7 @@ a:hover {
   align-items: center;
   will-change: transform, opacity;
   background: var(--background) !important;
+  border: 1px solid red;
 }
 
 .home-logo-p {
@@ -112,7 +113,7 @@ a:hover {
 }
 
 /*=======================================
-==>  Right Navigation 
+==>   Right Navigation 
 =========================================*/
 .navigation-bar {
   position: absolute !important;
@@ -792,7 +793,7 @@ a:hover {
   color: var(--dark-mode-bg) !important;
 }
 
-/* .alert {
+.alert {
   text-align: center;
   padding: 10px;
   background: #118506d3;
@@ -803,7 +804,7 @@ a:hover {
 .error i {
   color: #f71212d5;
   font-size: 6px;
-} */
+}
 
 @media (max-width: 750px) {
   .wrapper-contact {
@@ -823,7 +824,53 @@ a:hover {
 }
 
 @media (max-width: 1275px) {
+  /*
+=======================================
+==>         Home Page
+=========================================
+*/
   .navigation-bar {
     left: 65%;
   }
+
+  #left-logo,
+  #left-icons,
+  #dark-mode-left-logo,
+  #dark-mode-left-icons {
+    left: 2%;
+  }
+
+  /*=======================================
+==>  LightMode Right-Bottom-Buttons  
+=========================================*/
+
+  .btn-move-right {
+    display: none;
+  }
+
+  .btn-move-left {
+    display: none;
+  }
+
+  /*=======================================
+==>  END - LightMode Right-Bottom-Buttons  
+=========================================*/
+
+  /*
+=======================================
+==>         About
+=========================================
+*/
+
+  /*
+=======================================
+==>         Projects
+=========================================
+*/
+
+  /*
+=======================================
+==>         Contact
+=========================================
+*/
 }
