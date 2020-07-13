@@ -22,7 +22,7 @@ const aboutText = [
       <p className="about-left-p-2">
         After graduating with an <br />
         <span className="p-after-fe-2">AAS in Web Development</span> I completed
-        a 500 + hour full-stack Software Engineering coding boot camp at <br />
+        a 500 + hour full-stack Software Engineering coding boot camp at{" "}
         <span className="p-after-be-2">General Assembly </span>
       </p>
     ),
@@ -30,9 +30,9 @@ const aboutText = [
   {
     id: 2,
     text: (
-      <p className="about-left-p-2">
+      <p className="about-left-p-3">
         Now, I'm working at General Assembly as <br />
-        <span className="p-after-fe-2">Instructor Associate</span> for the
+        <span className="p-after-fe-3">Instructor Associate</span> for the
         Software Engineering Immersive (SEI) Remote Courses. <br />
       </p>
     ),
@@ -49,7 +49,7 @@ const About = () => {
   });
 
   useEffect(
-    () => void setInterval(() => set((state) => (state + 1) % 3), 8000),
+    () => void setInterval(() => set((state) => (state + 1) % 3), 3000),
     []
   );
 
