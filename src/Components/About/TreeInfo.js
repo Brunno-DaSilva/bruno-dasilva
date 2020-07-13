@@ -253,16 +253,40 @@ const TreeInfo = () => {
         <Tree name="Getting Personal">
           <Tree
             style={{ fontSize: "1.3rem" }}
-            name="I served 2 and half years as a full-time NGO volunteer"
-          />
-          <Tree
-            style={{ fontSize: "1.3rem" }}
-            name="I love coffee, my family, coding, and soccer"
-          />
-          <Tree
-            style={{ fontSize: "1.3rem" }}
-            name="I love to travel the world, and enjoy the little things"
-          />
+            name="I served as a full-time volunteer"
+          >
+            <Tree
+              style={{ fontSize: "1.3rem" }}
+              name="at the NGO youth with a mission"
+            />
+            <Tree style={{ fontSize: "1.3rem" }} name="For 2 and Half years" />
+            <Tree style={{ fontSize: "1.3rem" }} name="I was a Soccer coach" />
+            <Tree
+              style={{ fontSize: "1.3rem" }}
+              name="I assisted in a shelter for street kids"
+            />
+            <Tree
+              style={{ fontSize: "1.3rem" }}
+              name="I performed and taught Drama"
+            />
+            <Tree
+              style={{ fontSize: "1.3rem" }}
+              name="Helped local communities"
+            />
+          </Tree>
+          <Tree style={{ fontSize: "1.3rem" }} name="I love:">
+            <Tree
+              style={{ fontSize: "1.3rem" }}
+              name="Spending time with My Family"
+            />
+            <Tree style={{ fontSize: "1.3rem" }} name="coding and learning " />
+            <Tree style={{ fontSize: "1.3rem" }} name="Playing soccer" />
+            <Tree style={{ fontSize: "1.3rem" }} name="Traveling the world" />
+            <Tree
+              style={{ fontSize: "1.3rem" }}
+              name="Enjoying the little things"
+            />
+          </Tree>
         </Tree>
       </Tree>
     </>
