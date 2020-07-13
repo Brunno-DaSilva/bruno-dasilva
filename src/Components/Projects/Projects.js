@@ -63,14 +63,15 @@ const Projects = () => {
               <div className="details-title">
                 <h1>Techfy Online Store</h1>
               </div>
+
               <div className="details-desc">
                 <p>
-                  Fully functional and interactive, this web application allows
-                  users to see a list of products, see details about each
-                  product, add them to the cart, increment the number of items
-                  and buy the products utilizing PayPal.
+                  Fully functional and interactive, this app allows users to see
+                  a detailed list of products, add them to a cart, increment the
+                  number of items, and buy the products utilizing PayPal.
                 </p>
               </div>
+
               <div className="details-btn">
                 <div className="details-btn-github">
                   <button>

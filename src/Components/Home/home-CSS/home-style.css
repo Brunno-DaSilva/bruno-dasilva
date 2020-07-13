@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
+/*
+=======================================
+==>        Home and Logo
+=========================================
+*/
 .section-container {
   display: flex;
   display: flex;
@@ -17,7 +22,12 @@ p {
   font-size: 1.1rem;
 }
 
-@media (max-width: 1275px) {
+/*
+=======================================
+==>        Media Query 
+=========================================
+*/
+@media (max-width: 1605px) {
   img {
     width: 6rem;
   }

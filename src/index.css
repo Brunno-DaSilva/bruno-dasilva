@@ -105,7 +105,7 @@ a:hover {
   align-items: center;
   will-change: transform, opacity;
   background: var(--background) !important;
-  border: 1px solid red;
+  border: 1px solid green;
 }
 
 .home-logo-p {
@@ -161,7 +161,6 @@ a:hover {
   position: absolute !important;
   top: 0;
   left: 3%;
-  width: 30%;
   display: flex;
   flex-direction: row;
   z-index: 99;
@@ -208,7 +207,6 @@ a:hover {
   position: absolute !important;
   top: 0;
   left: 3%;
-  width: 30%;
   display: flex;
   flex-direction: row;
   z-index: 99;
@@ -823,23 +821,34 @@ a:hover {
   }
 }
 
-@media (max-width: 1275px) {
+/*
+=======================================
+==>        Media Query 
+=========================================
+*/
+
+@media (max-width: 1605px) {
   /*
 =======================================
 ==>         Home Page
 =========================================
 */
   .navigation-bar {
-    left: 65%;
+    top: -2%;
+    left: 70%;
   }
 
   #left-logo,
-  #left-icons,
   #dark-mode-left-logo,
+  #left-icons,
   #dark-mode-left-icons {
     left: 2%;
   }
 
+  #left-logo,
+  #dark-mode-left-logo {
+    top: -3%;
+  }
   /*=======================================
 ==>  LightMode Right-Bottom-Buttons  
 =========================================*/
@@ -867,6 +876,138 @@ a:hover {
 ==>         Projects
 =========================================
 */
+
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85vw;
+    height: 75vh;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 47%;
+    height: 48%;
+    background-color: var(--background);
+    overflow-x: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .card-one,
+  .card-three {
+    margin-right: 1rem;
+  }
+
+  .projects-img-wrapper,
+  .projects-details {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  .projects-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .details-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background) !important;
+  }
+
+  .details-title,
+  .details-desc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .details-title h1 {
+    color: var(--foreground);
+    font-size: 1.3em;
+  }
+  .details-desc {
+    padding: 0 0.4em;
+    color: var(--foreground);
+  }
+  .details-desc p {
+    line-height: 1.5rem;
+    font-size: 1em;
+    padding: 1rem;
+  }
+
+  .details-featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--foreground);
+  }
+
+  .details-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .details-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .details-btn-github,
+  .details-btn-demo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details-btn-github button,
+  .details-btn-demo button {
+    width: 70%;
+    height: 2rem;
+    background: var(--title-light-gray-color);
+    border: none;
+  }
+
+  .details-btn-github button a,
+  .details-btn-demo button a {
+    color: var(--main-light-gray-bg);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+  }
+
+  .details-btn-github button a:hover,
+  .details-btn-demo button a:hover {
+    cursor: pointer;
+    color: var(--dark-mode-bg) !important;
+    background: transparent !important;
+  }
+
+  /*=======================================
+==>  END - Project Container 
+=========================================*/
 
   /*
 =======================================
