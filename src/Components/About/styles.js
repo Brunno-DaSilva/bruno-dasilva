@@ -15,7 +15,7 @@ const Frame = styled("div")`
 const Title = styled("span")`
   vertical-align: middle;
   font-size: 1.7rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   text-transform: capitalize;
 `;
 
