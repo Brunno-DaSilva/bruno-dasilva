@@ -85,7 +85,6 @@ a:hover {
   padding: 0;
   width: 99.9%;
   height: 100vh;
-  border: 1px solid red;
   will-change: transform, opacity;
 }
 
@@ -108,36 +107,17 @@ a:hover {
   background: var(--background) !important;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 400vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-::-webkit-scrollbar {
-  display: none;
-}
-
 .home-logo-p {
   color: var(--foreground);
 }
 
+/*=======================================
+==>  Right Navigation 
+=========================================*/
 .navigation-bar {
   position: absolute !important;
   top: 0;
-  left: 78%;
+  left: 76%;
   display: flex;
   flex-direction: row;
   z-index: 99;
@@ -166,8 +146,12 @@ a:hover {
 .navigation-bar a:hover,
 .navigation-bar p:hover {
   cursor: pointer;
-  box-shadow: inset 0 -5px 0 0 #e49312;
+  box-shadow: inset 0 -5px 0 0 #e493129c;
 }
+
+/*=======================================
+==>  End - Right Navigation 
+=========================================*/
 
 /*=======================================
 ==>  LightMode Top-Left-logo 
@@ -838,34 +822,41 @@ a:hover {
   }
 }
 
-/*
-*
-*********************************************************************
-*   Media Query Portfolio Addition max-width: 768px                 *
-*********************************************************************  
-*
-*
-*/
-@media screen and  (max-width:1408px) {
-    body {
-    color: red;
+@media (max-width: 1600px) {
+  /*=======================================
+==>  Right Navigation 
+=========================================*/
+  .navigation-bar {
+    position: absolute !important;
+    top: 0;
+    left: 7% !important;
   }
-}
-/*
-  *
-  *
-  *
-  *
-  */
-/*
-  *
-  *********************************************************************
-  *=====END Media Query Portfolio Addition max-width: 768px           *
-  *********************************************************************  
-  *
-  *
-  */
-@media screen and  (max-width: 460px) {
-}
-@media screen and  (max-width: 768px) {
+
+  .navigation-bar p,
+  .navigation-bar a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--foreground) !important;
+    border: none;
+    background-color: transparent;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    margin-top: 3.5rem;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  .navigation-bar a:hover,
+  .navigation-bar p:hover {
+    cursor: pointer;
+    box-shadow: inset 0 -5px 0 0 #e493129c;
+  }
+
+  /*=======================================
+==>  End - Right Navigation 
+=========================================*/
 }
