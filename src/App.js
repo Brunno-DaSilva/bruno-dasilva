@@ -84,11 +84,7 @@ export default function App() {
           <Contact path="contact" />
         </Router>
 
-        <article
-          className={
-            darkMode ? "dark-mode-btn-holder-right" : "btn-holder-right"
-          }
-        >
+        <article>
           <button
             onClick={() => setDarkMode((prevMode) => !prevMode)}
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
