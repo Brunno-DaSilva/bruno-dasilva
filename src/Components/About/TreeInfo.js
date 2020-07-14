@@ -44,7 +44,7 @@ const TreeInfo = () => {
       <Tree name="About ME 🙈🙉🙊" style={{ fontSize: "3rem" }} defaultOpen>
         <Tree name="I'm a Developer Based in Dallas, Tx" />
         <Tree name="Skills">
-          <Tree name="Software">
+          <Tree name="Software" style={{ fontSize: "1.4rem" }}>
             <Tree
               name="JavaScript"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
@@ -60,7 +60,7 @@ const TreeInfo = () => {
             />
             <Tree name="PHP" style={{ color: "#26b2e0", fontSize: "1.3rem" }} />
           </Tree>
-          <Tree name="Frameworks">
+          <Tree name="Frameworks" style={{ fontSize: "1.4rem" }}>
             <Tree
               name="React"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
@@ -78,7 +78,7 @@ const TreeInfo = () => {
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
           </Tree>
-          <Tree name="Database">
+          <Tree name="Database" style={{ fontSize: "1.4rem" }}>
             <Tree
               name="MongoDB"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
@@ -93,7 +93,7 @@ const TreeInfo = () => {
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
           </Tree>
-          <Tree name="Others">
+          <Tree name="Others" style={{ fontSize: "1.4rem" }}>
             <Tree
               name="NodeJS"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
