@@ -69,7 +69,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-right">
-        <div className="right-content">
+        <div className="right-content animated delay-1s fadeInRight">
           <TreeInfo />
         </div>
       </div>

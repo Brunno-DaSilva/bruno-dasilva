@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <>
-      <section className="section-container animated delay-1s fadeInUp">
+      <section className="section-container ">
         <animated.div
           id="divID"
           {...bind()}
@@ -24,8 +24,10 @@ function Home() {
             ),
           }}
         >
-          <img src={logo} />
-          <p className="home-logo-p">Front-end Development</p>
+          <img src={logo} className=" animated delay-2s fadeInUp" />
+          <p className="home-logo-p animated delay-1s fadeInUp">
+            Front-end Development
+          </p>
         </animated.div>
       </section>
     </>

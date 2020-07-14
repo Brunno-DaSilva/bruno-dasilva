@@ -1,5 +1,4 @@
-import { render } from "react-dom";
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { Router, Link } from "@reach/router";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
@@ -7,12 +6,7 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Menu from "./Components/NavigationBar/Menu/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCode,
-  faArrowUp,
-  faArrowDown,
-  faAdjust,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCode, faAdjust } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithubAlt,
   faLinkedinIn,
@@ -96,24 +90,13 @@ export default function App() {
           }
         >
           <button
+            onClick={() => setDarkMode((prevMode) => !prevMode)}
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
           >
             <FontAwesomeIcon icon={faAdjust} size="lg"></FontAwesomeIcon>
-          </button>
-        </article>
-
-        <article
-          className={darkMode ? "dark-mode-btn-holder-left" : "btn-holder-left"}
-        >
-          <button
-            className={darkMode ? "dark-mode-btn-move-left" : "btn-move-left"}
-          >
-            <FontAwesomeIcon icon={faArrowUp} size="lg"></FontAwesomeIcon>
           </button>
         </article>
       </main>
     </section>
   );
 }
-
-render(<App />, document.getElementById("root"));
