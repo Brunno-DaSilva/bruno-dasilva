@@ -465,18 +465,21 @@ a:hover {
 }
 
 .projects-img-wrapper,
-.projects-details {
+.projects-details,
+.projects-img-wrapper2 {
   display: grid;
   justify-items: center;
   align-items: center;
   width: 50%;
   height: 100%;
 }
-.projects-img-wrapper {
+.projects-img-wrapper,
+.projects-img-wrapper2 {
   width: 45%;
 }
 
-.projects-img-wrapper img {
+.projects-img-wrapper img,
+.projects-img-wrapper2 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -510,22 +513,6 @@ a:hover {
   line-height: 1.5rem;
   font-size: 1em;
   padding: 1rem;
-}
-
-.details-featured {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: var(--foreground);
-}
-
-.details-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .details-btn {
@@ -1271,6 +1258,27 @@ a:hover {
   .company-info ul,
   .brand {
     text-align: left;
+  }
+
+  /*
+=======================================
+==>        Projects  
+=========================================
+*/
+  .card-two .projects-img-wrapper {
+    display: none;
+  }
+  .projects-img-wrapper2 img {
+    object-fit: fill !important;
+    object-position: 50% 50% !important; /* default value: image is centered*/
+    width: 40vw;
+    height: auto;
+    margin-left: 0.5rem;
+  }
+
+  .details-btn-github,
+  .details-btn-demo {
+    width: 50%;
   }
 }
 

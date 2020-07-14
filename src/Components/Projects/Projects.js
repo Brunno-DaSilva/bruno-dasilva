@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-
+import MediaQuery from "react-responsive";
 const Projects = () => {
   let app = useRef(null);
 
@@ -13,7 +13,6 @@ const Projects = () => {
           <div className="projects-img-wrapper animated delay-1s fadeInLeft">
             <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1581091889/imgs_starwars/imgs/Zilnai-logo2_xazqwf.png" />
           </div>
-
           <div className="projects-details animated delay-1s fadeInLeft">
             <div className="details-wrapper">
               <div className="details-title">
@@ -55,8 +54,16 @@ const Projects = () => {
 
         <div className="card-two animated fadeInRight">
           <div className="projects-img-wrapper animated delay-1s fadeInRight">
-            <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997580/imgs_starwars/EcommerceProject/Add_a_heading_ktzhqh.png" />
+            <img
+              id="img-lg"
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997580/imgs_starwars/EcommerceProject/Add_a_heading_ktzhqh.png"
+            />
           </div>
+          <MediaQuery query="(max-device-width: 750px)">
+            <div className="projects-img-wrapper2 animated delay-1s fadeInRight">
+              <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997213/imgs_starwars/EcommerceProject/logo_qs7zvz.png" />
+            </div>
+          </MediaQuery>
 
           <div className="projects-details animated delay-1s fadeInRight">
             <div className="details-wrapper">
