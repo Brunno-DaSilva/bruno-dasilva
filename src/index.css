@@ -1119,14 +1119,6 @@ a:hover {
   #btn-form input {
     width: 50%;
   }
-  .wrapper-contact {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .wrapper-contact > * {
-    padding: 1em;
-  }
 
   /*
 =======================================
@@ -1150,10 +1142,44 @@ a:hover {
 
 /*
 =======================================
+==>        Max-Width: 950px
+=========================================
+*/
+@media (max-width: 950px) {
+  .navigation-bar {
+    top: -2%;
+    left: 50%;
+  }
+
+  .contact-title {
+    display: none;
+  }
+
+  .container-contact {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 45vw;
+  }
+}
+
+/*
+=======================================
 ==>        Max-Width: 750px
 =========================================
 */
 @media (max-width: 750px) {
+  .navigation-bar {
+    top: -2%;
+    left: 30%;
+  }
+
+  .contact-title {
+    display: none;
+  }
   .wrapper-contact {
     display: grid;
     grid-template-columns: 1fr 2fr;
