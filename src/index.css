@@ -1311,6 +1311,41 @@ a:hover {
   #left-logo {
     display: none;
   }
+
+  #contactme {
+    width: 100vw;
+    height: 60vh;
+  }
+
+  .container-contact {
+    width: 100% !important;
+    height: 100%;
+    text-align: center;
+    box-shadow: none;
+  }
+
+  .wrapper-contact {
+    display: grid;
+    grid-template-columns: 2fr !important;
+    width: 100% !important;
+  }
+
+  .contact {
+    position: absolute;
+    left: 5%;
+    width: 90vw;
+    padding: 0.1rem;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  #btn-form input {
+    width: 40%;
+  }
 }
 
 @media (max-width: 490px) {
@@ -1321,7 +1356,7 @@ a:hover {
 
   .navigation-bar p,
   .navigation-bar a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0.2rem;
   }
 
@@ -1349,7 +1384,20 @@ a:hover {
 
   .btn-move-right,
   .dark-mode-btn-move-right {
-    left: 85vw;
+    left: 84vw;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 0.2rem 1rem;
+  }
+
+  #btn-form input {
+    position: absolute;
+    top: 77%;
+    left: 30%;
+    width: 40%;
   }
 }
 
