@@ -1346,6 +1346,50 @@ a:hover {
   #btn-form input {
     width: 40%;
   }
+
+  /*=======================================
+==>       Project Container 
+=========================================*/
+  .projects-container {
+    width: 100vw;
+    height: 75vh;
+    overflow-x: hidden;
+  }
+
+  .card-one,
+  .card-two,
+  .card-three,
+  .card-four {
+    width: 100%;
+    height: 53.5%;
+  }
+
+  .card-one,
+  .card-three {
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+  .card-two {
+    margin-bottom: 1rem;
+  }
+
+  .projects-img-wrapper,
+  .projects-details,
+  .projects-img-wrapper2 {
+    width: 100%;
+    height: 100%;
+  }
+  .projects-img-wrapper,
+  .projects-img-wrapper2 {
+    width: 100%;
+  }
+
+  .projects-img-wrapper img,
+  .projects-img-wrapper2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 490px) {
