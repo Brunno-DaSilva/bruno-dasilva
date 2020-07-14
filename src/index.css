@@ -615,8 +615,8 @@ a:hover {
 .aboutText {
   position: "absolute";
   top: 50%;
-  max-width: 90%;
-  max-height: 60% !important;
+  width: 90%;
+  height: 60% !important;
   overflow-x: hidden;
 }
 
@@ -907,8 +907,8 @@ a:hover {
   }
 
   .aboutText {
-    max-width: 90%;
-    min-height: 70% !important;
+    width: 90%;
+    height: 70% !important;
     overflow-x: hidden;
   }
 
@@ -1389,6 +1389,79 @@ a:hover {
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  /*====================
+==> About Component  
+====================*/
+  .about-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .about-left {
+    display: block;
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .aboutText {
+    position: "absolute";
+    top: 50% !important;
+    min-width: 95vw !important;
+    min-height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .p-after-fe,
+  .p-after-be {
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+  }
+  .p-after-fe-2,
+  .p-after-be-2,
+  .p-after-fe-3 {
+    font-size: 1.8rem !important;
+    font-weight: 600 !important;
+  }
+
+  .p-after-fe::after {
+    display: none;
+  }
+
+  .p-after-be::after {
+    display: none;
+  }
+
+  .p-after-fe-2::after {
+    display: none;
+  }
+
+  .p-after-fe-3::after {
+    display: none;
+  }
+
+  .p-after-be-2::after {
+    display: none;
+  }
+  .about-left-p span {
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .about-left-p-2 span {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .about-right {
+    display: none;
+  }
+
+  .contact-title {
+    display: none;
   }
 }
 
