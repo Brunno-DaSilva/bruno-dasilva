@@ -31,7 +31,7 @@ export default function App() {
       <nav className="navigation-bar animated fadeInRight">
         {/* <NavigationBar /> */}
         <NavigationBar />
-        <p>
+        <p className="dark-mode-icon">
           <FontAwesomeIcon
             onClick={() => setDarkMode((prevMode) => !prevMode)}
             icon={faAdjust}

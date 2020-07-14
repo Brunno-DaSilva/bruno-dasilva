@@ -6,14 +6,16 @@ const aboutText = [
   {
     id: 0,
     text: (
-      <p className="about-left-p">
-        I'm a <span className="p-after-fe">Front-End Developer</span>
-        with{" "}
-        <span className="p-after-be">
-          Full-Stack <span id="expo">exposure</span>
-        </span>
-        <span>and 6 years of experience in different IT-related fields.</span>
-      </p>
+      <>
+        <p className="about-left-p">
+          I'm a <span className="p-after-fe">Front-End Developer</span>
+          with{" "}
+          <span className="p-after-be">
+            Full-Stack <span id="expo">exposure</span>
+          </span>
+          <span>and 6 years of experience in different IT-related fields.</span>
+        </p>
+      </>
     ),
   },
   {
@@ -33,7 +35,7 @@ const aboutText = [
       <p className="about-left-p-3">
         Now, I'm working at General Assembly as <br />
         <span className="p-after-fe-3">Instructor Associate</span> for the
-        Software Engineering Immersive (SEI) Remote Courses. <br />
+        Software Engineering Immersive (SEI) Courses. <br />
       </p>
     ),
   },
@@ -49,13 +51,13 @@ const About = () => {
   });
 
   useEffect(
-    () => void setInterval(() => set((state) => (state + 1) % 3), 3000),
+    () => void setInterval(() => set((state) => (state + 1) % 3), 7000),
     []
   );
 
   return (
     <div className="about-container">
-      <div className="about-left">
+      <div className="about-left animated delay-1s fadeInLeft">
         <div className="left-content">
           <div className="aboutText">
             {transitions.map(({ item, props, key }) => (
