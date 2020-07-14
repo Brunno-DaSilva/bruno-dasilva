@@ -61,7 +61,7 @@ const About = () => {
         <div className="left-content">
           <div className="aboutText">
             {transitions.map(({ item, props, key }) => (
-              <animated.div key={key} class="bg" style={{ ...props }}>
+              <animated.div key={key} className="bg" style={{ ...props }}>
                 <div>{item.text}</div>
               </animated.div>
             ))}

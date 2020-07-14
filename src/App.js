@@ -1,13 +1,11 @@
 import { render } from "react-dom";
 import React, { useState, useCallback } from "react";
-import { useTransition, animated } from "react-spring";
 import { Router, Link } from "@reach/router";
-
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
-import NavigationBar from "./Components/NavigationBar/NavigationBar";
+import Menu from "./Components/NavigationBar/Menu/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
@@ -28,17 +26,10 @@ export default function App() {
   return (
     <section className={darkMode ? "dark-mode " : "light-mode"}>
       {/* topright navigation  */}
-      <nav className="navigation-bar animated fadeInRight">
+      <div className="navigation-bar animated fadeInRight">
         {/* <NavigationBar /> */}
-        <NavigationBar />
-        <p className="dark-mode-icon">
-          <FontAwesomeIcon
-            onClick={() => setDarkMode((prevMode) => !prevMode)}
-            icon={faAdjust}
-            size="1x"
-          ></FontAwesomeIcon>
-        </p>
-      </nav>
+        <Menu />
+      </div>
 
       {/* leftTop brunoName logo */}
 
@@ -107,7 +98,7 @@ export default function App() {
           <button
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
           >
-            <FontAwesomeIcon icon={faArrowDown} size="lg"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faAdjust} size="lg"></FontAwesomeIcon>
           </button>
         </article>
 
