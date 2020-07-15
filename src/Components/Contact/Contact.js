@@ -5,7 +5,7 @@ import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 class Contact extends Component {
   state = {
-    messageSent: true,
+    messageSent: false,
     name: "",
     email: "",
     subject: "",
