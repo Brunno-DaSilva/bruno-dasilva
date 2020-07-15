@@ -803,9 +803,12 @@ a:hover {
 .alert {
   text-align: center;
   padding: 10px;
-  background: #118506d3;
-  color: #fff;
-  display: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: var(--title-light-gray-color);
+  color: var(--main-light-gray-bg);
+  border-radius: 0 3rem 0 3rem;
+  /* display: none; */
 }
 
 .error {
@@ -1079,6 +1082,10 @@ a:hover {
   #btn-form input {
     width: 40%;
   }
+
+  .alert {
+    font-size: 0.8rem;
+  }
 }
 
 /*
@@ -1167,6 +1174,9 @@ a:hover {
 
   .contact {
     width: 45vw;
+  }
+  .alert {
+    font-size: 0.7rem;
   }
 }
 
@@ -1346,6 +1356,13 @@ a:hover {
   #btn-form input {
     width: 40%;
   }
+  .alert {
+    font-size: 0.9rem;
+  }
+
+  .error {
+    display: none;
+  }
 
   /*=======================================
 ==>       Project Container 
@@ -1499,18 +1516,30 @@ a:hover {
   .dark-mode-btn-move-right {
     left: 84vw;
   }
+  .contact {
+    top: 13%;
+  }
 
   .contact form input,
   .contact form textarea {
     width: 100%;
     padding: 0.2rem 1rem;
+    font-size: 0.8rem;
   }
 
   #btn-form input {
     position: absolute;
-    top: 77%;
+    top: 80%;
     left: 30%;
     width: 40%;
+  }
+  .alert {
+    font-size: 0.7rem;
+  }
+
+  .error {
+    color: #f71212d5;
+    font-size: 6px;
   }
 }
 
