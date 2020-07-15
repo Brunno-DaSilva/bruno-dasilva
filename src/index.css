@@ -1524,7 +1524,7 @@ a:hover {
   .contact form textarea {
     width: 100%;
     padding: 0.2rem 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   #btn-form input {
@@ -1535,11 +1535,6 @@ a:hover {
   }
   .alert {
     font-size: 0.7rem;
-  }
-
-  .error {
-    color: #f71212d5;
-    font-size: 6px;
   }
 }
 
