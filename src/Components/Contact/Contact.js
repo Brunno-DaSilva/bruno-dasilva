@@ -67,7 +67,7 @@ class Contact extends Component {
                     value={this.state.name}
                     onChange={this.handleChange}
                   />
-                  <span className="error">
+                  <span className="required">
                     <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
                   </span>
                 </p>
@@ -82,7 +82,7 @@ class Contact extends Component {
                     value={this.state.email}
                     onChange={this.handleChange}
                   />
-                  <span className="error">
+                  <span className="required">
                     <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
                   </span>
                 </p>
@@ -108,7 +108,7 @@ class Contact extends Component {
                     id="form-message"
                     required
                   ></textarea>
-                  <span className="error">
+                  <span className="required">
                     <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
                   </span>
                 </p>

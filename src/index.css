@@ -811,9 +811,10 @@ a:hover {
   /* display: none; */
 }
 
-.error {
+.required {
   color: #f71212d5;
   font-size: 6px;
+  margin-left: 0.3rem;
 }
 
 #divID {
@@ -1373,7 +1374,7 @@ a:hover {
     font-size: 0.9rem;
   }
 
-  .error {
+  .required {
     display: none;
   }
 
