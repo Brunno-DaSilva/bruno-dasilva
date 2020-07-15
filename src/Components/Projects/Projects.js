@@ -1,11 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import MediaQuery from "react-responsive";
 const Projects = () => {
   let app = useRef(null);
 
-  useEffect(() => {
-    console.log(app);
-  });
   return (
     <div>
       <div className="projects-container" ref={(el) => (app = el)}>

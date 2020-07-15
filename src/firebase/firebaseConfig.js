@@ -1,8 +1,4 @@
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/database";
-import "firebase/firestore";
-import Axios from "axios";
+import firebase from "firebase";
 
 // Initialize Firebase
 let config = {
@@ -14,8 +10,6 @@ let config = {
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
 };
 
-firebase.initializeApp(config);
+const firebaseConf = firebase.initializeApp(config);
 
-const db = firebase.firestore();
-
-export { Axios, db };
+export default firebaseConf;

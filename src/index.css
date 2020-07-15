@@ -808,7 +808,7 @@ a:hover {
   display: none;
 }
 
-.error i {
+.error {
   color: #f71212d5;
   font-size: 6px;
 }
