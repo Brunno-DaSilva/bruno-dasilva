@@ -25,7 +25,7 @@ const aboutText = [
         After graduating with an <br />
         <span className="p-after-fe-2">AAS in Web Development</span> I completed
         a 500 + hour full-stack Software Engineering coding boot camp at{" "}
-        <span className="p-after-be-2">General Assembly </span>
+        <span className="p-after-be-2"> General Assembly </span>
       </p>
     ),
   },
@@ -51,7 +51,7 @@ const About = () => {
   });
 
   useEffect(
-    () => void setInterval(() => set((state) => (state + 1) % 3), 7000),
+    () => void setInterval(() => set((state) => (state + 1) % 3), 8000),
     []
   );
 

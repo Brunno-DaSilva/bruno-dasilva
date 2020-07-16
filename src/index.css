@@ -632,6 +632,9 @@ a:hover {
   font-weight: 800 !important;
 }
 
+.p-after-be-2 {
+  margin-left: 1rem;
+}
 .p-after-fe::after {
   content: "";
   max-width: 22vw;
@@ -658,44 +661,6 @@ a:hover {
   margin-left: 4.5rem;
 }
 
-.p-after-fe-2::after {
-  content: "";
-  max-width: 24vw;
-  height: 1px !important;
-  background: #dd9116b6;
-  border-radius: 1rem;
-  display: block;
-  padding: 0.2rem;
-  z-index: -1;
-  margin-top: -1.5rem;
-  margin-left: 0rem;
-}
-
-.p-after-fe-3::after {
-  content: "";
-  max-width: 16vw;
-  height: 1px !important;
-  background: #dd9116b6;
-  border-radius: 1rem;
-  display: block;
-  padding: 0.2rem;
-  z-index: -1;
-  margin-top: -1.5rem;
-  margin-left: 0rem;
-}
-
-.p-after-be-2::after {
-  content: "";
-  max-width: 21vw;
-  height: 1px !important;
-  background: #dd9116b6;
-  border-radius: 1rem;
-  display: block;
-  padding: 0.2rem;
-  z-index: -1;
-  margin-top: -1.5rem;
-  margin-left: -5rem;
-}
 .about-left-p span {
   text-align: left;
   font-size: 2rem;
@@ -941,13 +906,6 @@ a:hover {
     font-weight: 600 !important;
   }
 
-  .p-after-fe-2,
-  .p-after-be-2,
-  .p-after-fe-3 {
-    font-size: 1.8rem !important;
-    font-weight: 600 !important;
-  }
-
   .p-after-fe::after {
     max-width: 19vw;
     margin-top: -1.4rem;
@@ -960,22 +918,6 @@ a:hover {
     margin-left: 4.1rem;
   }
 
-  .p-after-fe-2::after {
-    max-width: 22vw;
-    border-radius: 1rem;
-    margin-top: -1.2rem;
-    margin-left: 0rem;
-  }
-
-  .p-after-fe-3::after {
-    max-width: 19vw;
-    margin-top: -1.5rem;
-    margin-left: 0rem;
-  }
-
-  .p-after-be-2::after {
-    display: none;
-  }
   .about-left-p span {
     text-align: left;
     font-size: 1.8rem;
@@ -1319,20 +1261,6 @@ a:hover {
     max-width: 25vw;
   }
 
-  .p-after-fe-2::after {
-    max-width: 57vw;
-    border-radius: 1rem;
-    margin-top: -1.2rem;
-    margin-left: 0rem;
-  }
-
-  .p-after-fe-3::after {
-    max-width: 52vw;
-  }
-
-  .p-after-be-2::after {
-    display: none;
-  }
   .about-left-p span {
     text-align: left;
     font-size: 1.8rem;
@@ -1537,17 +1465,6 @@ a:hover {
     display: none;
   }
 
-  .p-after-fe-2::after {
-    display: none;
-  }
-
-  .p-after-fe-3::after {
-    display: none;
-  }
-
-  .p-after-be-2::after {
-    display: none;
-  }
   .about-left-p span {
     text-align: left;
     font-size: 1.8rem;
