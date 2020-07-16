@@ -1207,12 +1207,14 @@ a:hover {
 */
 @media (max-width: 750px) {
   .navigation-bar {
-    top: -2%;
+    top: -4.5%;
     left: 88%;
+    box-shadow: none;
   }
-  .navigation-bar .dark-mode-icon {
-    margin-right: 1.5rem;
-    margin-left: -1rem;
+  .navigation-bar a:hover,
+  .navigation-bar p:hover {
+    cursor: pointer;
+    box-shadow: none;
   }
 
   .navigation-bar__item {
@@ -1258,14 +1260,13 @@ a:hover {
     width: 50%;
     max-width: 300px;
     z-index: 99 !important;
-    /* transform: translateX(200%); */
+    transform: translateX(10%);
     transition: transform 0.3s ease-out;
-    /* border-radius: 0 0 0 50rem; */
   }
-  /* 
+
   .side-drawer.open {
     transform: translateX(0);
-  } */
+  }
 
   .backdrop {
     position: absolute;
@@ -1392,12 +1393,13 @@ a:hover {
 */
 @media (max-width: 550px) {
   .navigation-bar {
-    top: -5%;
-    left: 15%;
+    top: -4.5%;
   }
-  .navigation-bar .dark-mode-icon {
-    margin-right: 1.5rem;
-    margin-left: -1rem;
+
+  .navigation-bar a:hover,
+  .navigation-bar p:hover {
+    cursor: pointer;
+    box-shadow: none;
   }
 
   #dark-mode-left-logo,
@@ -1567,7 +1569,7 @@ a:hover {
 
 @media (max-width: 490px) {
   .navigation-bar {
-    top: -5%;
+    top: -4.5%;
     left: -1%;
   }
 
@@ -1637,6 +1639,20 @@ a:hover {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.animated.delay-1shalf {
+  -webkit-animation-delay: calc(1s * 1.5);
+  animation-delay: calc(1s * 1.5);
+  -webkit-animation-delay: calc(1s * 1.5);
+  animation-delay: calc(1s * 1.5);
+}
+
 .animated.delay-2s {
   -webkit-animation-delay: calc(1s * 2);
   animation-delay: calc(1s * 2);
@@ -1644,11 +1660,24 @@ a:hover {
   animation-delay: calc(1s * 2);
 }
 
-.animated.delay-1s {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+.animated.delay-2shalf {
+  -webkit-animation-delay: calc(1s * 2.5);
+  animation-delay: calc(1s * 2);
+  -webkit-animation-delay: calc(1s * 2.5);
+  animation-delay: calc(1s * 2.5);
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: calc(1s * 3);
+  animation-delay: calc(1s * 3);
+  -webkit-animation-delay: calc(1s * 3);
+  animation-delay: calc(1s * 3);
+}
+.animated.delay-3shalf {
+  -webkit-animation-delay: calc(1s * 3.4);
+  animation-delay: calc(1s * 3);
+  -webkit-animation-delay: calc(1s * 3.4);
+  animation-delay: calc(1s * 3.4);
 }
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
