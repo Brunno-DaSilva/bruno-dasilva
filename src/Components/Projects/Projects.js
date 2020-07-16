@@ -28,7 +28,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
-                      href="https://github.com/DaSilvaBrunoTexas"
+                      href="https://github.com/DaSilvaBrunoTexas/ReactOnRails-Hotel-Reservation"
                     >
                       GitHub
                     </a>
@@ -38,7 +38,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
-                      href="https://github.com/DaSilvaBrunoTexas"
+                      href="https://github.com/DaSilvaBrunoTexas/ReactOnRails-Hotel-Reservation"
                     >
                       Demo
                     </a>

@@ -24,7 +24,11 @@ function Home() {
             ),
           }}
         >
-          <img src={logo} className=" animated delay-1s fadeInUp" />
+          <img
+            src={logo}
+            alt="Bruno DaSilva"
+            className=" animated delay-1s fadeInUp"
+          />
           <p className="home-logo-p animated delay-2s fadeInUp">
             Front-end Development
           </p>

@@ -5,6 +5,9 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import Menu from "./Components/NavigationBar/Menu/Menu";
+import SideDrawer from "./Components/NavigationBar/SideDrawer/SideDrawer";
+import Backdrop from "./Components/Backdrop/Backdrop";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faAdjust } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -16,14 +19,37 @@ import "./index.css";
 
 export default function App() {
   const [darkMode, setDarkMode] = React.useState(false);
+  const [sideDrawerOpen, setSideDrawerOpen] = React.useState(false);
 
+  const darkModeHandler = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
+  const drawerToggleClickHandler = () => {
+    setSideDrawerOpen((prevState) => !prevState);
+  };
+
+  const backdropClickHandler = () => {
+    setSideDrawerOpen((prevState) => !prevState);
+  };
+
+  let sideDrawer;
+  let backdrop;
+
+  if (sideDrawerOpen) {
+    sideDrawer = <SideDrawer />;
+    backdrop = <Backdrop backdropClick={backdropClickHandler} />;
+  }
   return (
     <section className={darkMode ? "dark-mode " : "light-mode"}>
       {/* topright navigation  */}
       <div className="navigation-bar animated fadeInRight">
         {/* <NavigationBar /> */}
-        <Menu />
+
+        <Menu drawerClickHandler={drawerToggleClickHandler} />
+        {sideDrawer}
       </div>
+      {backdrop}
 
       {/* leftTop brunoName logo */}
 
@@ -86,7 +112,8 @@ export default function App() {
 
         <article>
           <button
-            onClick={() => setDarkMode((prevMode) => !prevMode)}
+            // onClick={() => setDarkMode((prevMode) => !prevMode)}
+            onClick={darkModeHandler}
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
           >
             <FontAwesomeIcon icon={faAdjust} size="lg"></FontAwesomeIcon>
