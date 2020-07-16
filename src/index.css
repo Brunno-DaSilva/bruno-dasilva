@@ -1274,7 +1274,8 @@ a:hover {
     left: 0;
     width: 100vw;
     height: 1000px;
-    background: #fca21165;
+    background: var(--foreground);
+    opacity: 0.3;
     z-index: 10;
   }
 
