@@ -3,18 +3,6 @@ import React from "react";
 import SideDrawerButton from "../SideDrawer/SideDrawerButton";
 
 import NavLinkActive from "../NavLinkActive";
-// const NavLink = (props) => (
-//   <Link
-//     {...props}
-//     getProps={({ isCurrent }) => {
-//       return {
-//         style: {
-//           color: isCurrent ? "#26b2e0" : "#9e9d9d",
-//         },
-//       };
-//     }}
-//   />
-// );
 
 const Menu = (props) => {
   return (
