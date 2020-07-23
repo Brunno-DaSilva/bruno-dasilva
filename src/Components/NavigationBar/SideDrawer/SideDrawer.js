@@ -1,20 +1,20 @@
 import React from "react";
-import { Link } from "@reach/router";
+import NavLinkActive from "../NavLinkActive";
 
 const SideDrawer = (props) => {
   return (
     <nav className="side-drawer animated fadeInRight">
       <p className="animated delay-1s fadeInRight">
-        <Link to="/">Home</Link>
+        <NavLinkActive to="/">Home</NavLinkActive>
       </p>
       <p className="animated delay-1shalf fadeInRight">
-        <Link to="about">About</Link>
+        <NavLinkActive to="about">About</NavLinkActive>
       </p>
       <p className="animated delay-2s fadeInRight">
-        <Link to="projects">Projects</Link>
+        <NavLinkActive to="projects">Projects</NavLinkActive>
       </p>
       <p className="animated delay-2shalf fadeInRight">
-        <Link to="contact">Contact</Link>
+        <NavLinkActive to="contact">Contact</NavLinkActive>
       </p>
     </nav>
   );
