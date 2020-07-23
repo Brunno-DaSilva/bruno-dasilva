@@ -63,21 +63,40 @@ These were the very first design I decided to put it here to demonstrate a littl
 
 ##### Home Page
 
-
 <img src="images/darkmodeHome.jpg" width="100%" >
 
----
 
-<img src="images/Lightmode.png" width="100%" >
+<img src="images/lightmodeHome.jpg" width="100%" >
+
+---
 
 ##### About
 
 <img src="images/about-dark.jpg" width="100%" >
 
----
-
 <img src="images/abour-light.jpg" width="100%" >
 
+---
+
+
+##### Projects
+
+<img src="images/projects-dark.jpg" width="100%" >
+
+
+<img src="images/projects-light.jpg" width="100%" >
+
+---
+
+
+##### Contact
+
+<img src="images/contact-dark.jpg" width="100%" >
+
+
+<img src="images/contact-light.jpg" width="100%" >
+
+---
 
 ##### Mobile
 
@@ -88,6 +107,7 @@ These were the very first design I decided to put it here to demonstrate a littl
 ---
 
 <img src="images/mobile-light.jpg" width="100%" >
+
 <img src="images/sidedrawer-light.jpg" width="100%" >
 
 
