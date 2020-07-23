@@ -42,14 +42,15 @@ I decided to dig in React Springs and React Ant, to challenge myself to learn so
 ### Tools :
 
     - ReactJS
-    - React Router
+    - React Reach Router
     - React Spring
     - JSX
     - SendGrid
+    - EmailJS
     - FontAwesome
     - Canva.com
     - Adobe Illustrator
-    - FireBase
+    
 
 ---
 
