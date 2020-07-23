@@ -45,7 +45,6 @@ I decided to dig in React Springs and React Ant, to challenge myself to learn so
     - React Reach Router
     - React Spring
     - JSX
-    - SendGrid
     - EmailJS
     - FontAwesome
     - Canva.com
