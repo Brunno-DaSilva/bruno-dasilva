@@ -100,15 +100,15 @@ These were the very first design I decided to put it here to demonstrate a littl
 
 ##### Mobile
 
-<img src="images/mobile-dark.jpg" width="100%" >
+<img src="images/mobile-dark.jpg" width="50%" >
 
-<img src="images/sidedrawer-dark.jpg" width="100%" >
+<img src="images/sidedrawer-dark.jpg" width="50%" >
 
 ---
 
-<img src="images/mobile-light.jpg" width="100%" >
+<img src="images/mobile-light.jpg" width="50%" >
 
-<img src="images/sidedrawer-light.jpg" width="100%" >
+<img src="images/sidedrawer-light.jpg" width="50%" >
 
 
 
