@@ -136,7 +136,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--foreground) !important;
+  color: var(--foreground);
   border: none;
   background-color: transparent;
   padding: 0.2rem;
