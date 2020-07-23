@@ -8,7 +8,10 @@ const Projects = () => {
       <div className="projects-container" ref={(el) => (app = el)}>
         <div className="card-one animated fadeInLeft">
           <div className="projects-img-wrapper animated delay-1s fadeInLeft">
-            <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1581091889/imgs_starwars/imgs/Zilnai-logo2_xazqwf.png" />
+            <img
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1581091889/imgs_starwars/imgs/Zilnai-logo2_xazqwf.png"
+              alt="Project Img"
+            />
           </div>
           <div className="projects-details animated delay-1s fadeInLeft">
             <div className="details-wrapper">
@@ -28,6 +31,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/DaSilvaBrunoTexas/ReactOnRails-Hotel-Reservation"
                     >
                       GitHub
@@ -38,6 +42,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/DaSilvaBrunoTexas/ReactOnRails-Hotel-Reservation"
                     >
                       Demo
@@ -54,11 +59,15 @@ const Projects = () => {
             <img
               id="img-lg"
               src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997580/imgs_starwars/EcommerceProject/Add_a_heading_ktzhqh.png"
+              alt="Project Img"
             />
           </div>
           <MediaQuery query="(max-device-width: 750px)">
             <div className="projects-img-wrapper2 animated delay-1s fadeInRight">
-              <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997213/imgs_starwars/EcommerceProject/logo_qs7zvz.png" />
+              <img
+                src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593997213/imgs_starwars/EcommerceProject/logo_qs7zvz.png"
+                alt="Project Img"
+              />
             </div>
           </MediaQuery>
 
@@ -81,6 +90,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/DaSilvaBrunoTexas"
                     >
                       GitHub
@@ -91,6 +101,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://online-store-techfy.herokuapp.com/home"
                     >
                       Demo
@@ -103,7 +114,10 @@ const Projects = () => {
         </div>
         <div className="card-three animated fadeInLeft">
           <div className="projects-img-wrapper animated delay-1s fadeInLeft">
-            <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1578630368/imgs_starwars/imgs/homepage_keiigd_mvgav0.png" />
+            <img
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1578630368/imgs_starwars/imgs/homepage_keiigd_mvgav0.png"
+              alt="Project Img"
+            />
           </div>
 
           <div className="projects-details">
@@ -124,6 +138,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/DaSilvaBrunoTexas"
                     >
                       GitHub
@@ -134,6 +149,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://star-wars-heroes-app.herokuapp.com/"
                     >
                       Demo
@@ -146,7 +162,10 @@ const Projects = () => {
         </div>
         <div className="card-four animated fadeInRight">
           <div className="projects-img-wrapper animated delay-1s fadeInRight">
-            <img src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593998725/Logo/mern_logo_ef0zsr.png" />
+            <img
+              src="https://res.cloudinary.com/duprwuo4j/image/upload/v1593998725/Logo/mern_logo_ef0zsr.png"
+              alt="Project Img"
+            />
           </div>
 
           <div className="projects-details animated delay-1s fadeInRight">
@@ -167,6 +186,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://github.com/DaSilvaBrunoTexas/MERN-STEP-BY-STEP"
                     >
                       GitHub
@@ -177,6 +197,7 @@ const Projects = () => {
                   <button>
                     <a
                       target="_blank"
+                      rel="noopener noreferrer"
                       href="https://todo-app-with-mern-stack.herokuapp.com/"
                     >
                       Demo

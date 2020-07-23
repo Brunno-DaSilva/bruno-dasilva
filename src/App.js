@@ -71,23 +71,36 @@ export default function App() {
         className="animated fadeInLeft"
       >
         <p>
-          <a target="_blank" href="https://github.com/DaSilvaBrunoTexas">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/DaSilvaBrunoTexas"
+          >
             <FontAwesomeIcon icon={faGithubAlt} size="1x"></FontAwesomeIcon>
           </a>
         </p>
         <p>
-          <a target="_blank" href="https://codepen.io/dasilvabrunotexas/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://codepen.io/dasilvabrunotexas/"
+          >
             <FontAwesomeIcon icon={faCodepen} size="1x"></FontAwesomeIcon>
           </a>
         </p>
         <p>
-          <a target="_blank" href="https://www.linkedin.com/in/bruno-dasilva/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/bruno-dasilva/"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} size="1x"></FontAwesomeIcon>
           </a>
         </p>
         <p>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://profiles.generalassemb.ly/bruno-dasilva"
           >
             <FontAwesomeIcon icon={faUserAlt} size="1x"></FontAwesomeIcon>
