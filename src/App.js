@@ -9,7 +9,7 @@ import SideDrawer from "./Components/NavigationBar/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faAdjust } from "@fortawesome/free-solid-svg-icons";
+import { faAdjust, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithubAlt,
   faLinkedinIn,
@@ -90,7 +90,7 @@ export default function App() {
             target="_blank"
             href="https://profiles.generalassemb.ly/bruno-dasilva"
           >
-            <FontAwesomeIcon icon={faCode} size="1x"></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faUserAlt} size="1x"></FontAwesomeIcon>
           </a>
         </p>
       </div>
