@@ -7,6 +7,7 @@ import Contact from "./Components/Contact/Contact";
 import Menu from "./Components/NavigationBar/Menu/Menu";
 import SideDrawer from "./Components/NavigationBar/SideDrawer/SideDrawer";
 import Backdrop from "./Components/Backdrop/Backdrop";
+import PageNotFound from "./Components/PageNotFound/PageNotFound";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAdjust, faUserAlt } from "@fortawesome/free-solid-svg-icons";
@@ -40,18 +41,14 @@ export default function App() {
     sideDrawer = <SideDrawer />;
     backdrop = <Backdrop backdropClick={backdropClickHandler} />;
   }
+
   return (
     <section className={darkMode ? "dark-mode " : "light-mode"}>
-      {/* topright navigation  */}
       <div className="navigation-bar animated fadeInRight">
-        {/* <NavigationBar /> */}
-
         <Menu drawerClickHandler={drawerToggleClickHandler} />
         {sideDrawer}
       </div>
       {backdrop}
-
-      {/* leftTop brunoName logo */}
 
       <div
         className="animated fadeInLeft"
@@ -121,6 +118,7 @@ export default function App() {
           <About path="about" />
           <Projects path="projects" />
           <Contact path="contact" />
+          <PageNotFound default />
         </Router>
 
         <article>

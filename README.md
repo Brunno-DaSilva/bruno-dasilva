@@ -111,7 +111,6 @@ These were the very first design I decided to put it here to demonstrate a littl
 <img src="images/sidedrawer-light.jpg" width="50%" >
 
 
-
 ---
 
 ##### See more at http://www.bruno-dasilva.com/
