@@ -32,7 +32,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/DaSilvaBrunoTexas/ReactOnRails-Hotel-Reservation"
+                      href="https://github.com/Brunno-DaSilva/ReactOnRails-Hotel-Reservation"
                     >
                       GitHub
                     </a>
@@ -43,7 +43,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/DaSilvaBrunoTexas/ReactOnRails-Hotel-Reservation"
+                      href="https://github.com/Brunno-DaSilva/ReactOnRails-Hotel-Reservation"
                     >
                       Demo
                     </a>
@@ -91,7 +91,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/DaSilvaBrunoTexas"
+                      href="https://github.com/Brunno-DaSilva/react-online-store-techfy"
                     >
                       GitHub
                     </a>
@@ -139,7 +139,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/DaSilvaBrunoTexas"
+                      href="https://github.com/Brunno-DaSilva/starwars-heroes-app"
                     >
                       GitHub
                     </a>
@@ -187,7 +187,7 @@ const Projects = () => {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="https://github.com/DaSilvaBrunoTexas/MERN-STEP-BY-STEP"
+                      href="https://github.com/Brunno-DaSilva/MERN-STEP-BY-STEP"
                     >
                       GitHub
                     </a>

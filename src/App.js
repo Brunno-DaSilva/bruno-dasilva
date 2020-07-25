@@ -62,7 +62,6 @@ export default function App() {
         </Link>
       </div>
 
-      {/* Leftbottom icons  */}
       <div
         id={darkMode ? "dark-mode-left-icons" : "left-icons"}
         className="animated fadeInLeft"
