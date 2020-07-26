@@ -938,11 +938,6 @@ a:hover {
           align-items: center;
 }
 
-.home-logo-p:hover {
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
 .side-drawer,
 .backdrop,
 .toggle-button,
@@ -950,10 +945,14 @@ a:hover {
   display: none;
 }
 
-.card1,
-.card2,
-.card3,
-.card4 {
+/***********************************
+*     PageNotFound sections 
+************************************/
+.card1-404,
+.card2-404,
+.card3-404,
+.card4-404,
+.card5-404 {
   position: absolute;
   border-radius: 5px;
   background-size: cover;
@@ -962,33 +961,32 @@ a:hover {
   will-change: transform;
 }
 
-.card1 {
+.card1-404 {
   min-width: 60ch;
   min-height: 60ch;
-  width: 45vw;
-  height: 45vw;
+  width: 50vw;
+  height: 50vw;
   max-width: 100ch;
   max-height: 100ch;
-  background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
+  background-image: url("./Components/PageNotFound/images/404-images-02.png");
 }
 
-.card2 {
-  width: 25ch;
-  height: 25ch;
-  background-image: url(https://image.flaticon.com/icons/svg/789/789395.svg);
+.card2-404 {
+  top: 26%;
+  left: 32%;
+  width: 65ch;
+  height: 65ch;
+  background-image: url("./Components/PageNotFound/images/404-images-03.png");
 }
 
-.card3 {
-  opacity: 0.9;
-  width: 25ch;
-  height: 25ch;
-  background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg);
-}
-
-.card4 {
-  width: 25ch;
-  height: 25ch;
-  background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg);
+.card3-404 {
+  top: 40%;
+  left: 45%;
+  width: 75ch;
+  height: 75ch;
+  max-width: 100ch;
+  max-height: 100ch;
+  background-image: url("./Components/PageNotFound/images/404-images-04.png");
 }
 
 .container-404 {
@@ -1211,6 +1209,20 @@ a:hover {
   /*=======================================
 ==>  END - Project Container 
 =========================================*/
+  /***********************************
+*     PageNotFound sections 
+************************************/
+  .card2-404 {
+    top: 32%;
+    width: 55ch;
+    height: 55ch;
+  }
+  .card3-404 {
+    top: 42%;
+    left: 45%;
+    width: 70ch;
+    height: 70ch;
+  }
 }
 
 /*
@@ -1261,6 +1273,15 @@ a:hover {
   .alert {
     font-size: 0.8rem;
   }
+  /***********************************
+*     PageNotFound sections 
+************************************/
+  .card3-404 {
+    top: 49%;
+    left: 50%;
+    width: 55ch;
+    height: 55ch;
+  }
 }
 
 /*
@@ -1308,6 +1329,13 @@ a:hover {
   .right-content {
     padding: 0.5rem;
   }
+  .card2-404 {
+    left: 25%;
+  }
+  .card3-404 {
+    top: 45%;
+    left: 50%;
+  }
 }
 
 /*
@@ -1347,6 +1375,15 @@ a:hover {
   }
   .alert {
     font-size: 0.7rem;
+  }
+  .card2-404 {
+    top: 40%;
+    width: 45ch;
+    height: 45ch;
+  }
+  .card3-404 {
+    top: 45%;
+    left: 50%;
   }
 }
 
@@ -1533,6 +1570,9 @@ a:hover {
   .details-btn-demo {
     width: 50%;
   }
+  .card2-404 {
+    left: 10%;
+  }
 }
 
 /*
@@ -1693,6 +1733,9 @@ a:hover {
   .contact-title {
     display: none;
   }
+  .card2-404 {
+    left: 1%;
+  }
 }
 
 @media (max-width: 490px) {
@@ -1746,6 +1789,9 @@ a:hover {
   }
   .alert {
     font-size: 0.7rem;
+  }
+  .card2-404 {
+    left: -18%;
   }
 }
 

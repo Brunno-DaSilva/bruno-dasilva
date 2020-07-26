@@ -1,21 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
 /*
 =======================================
 ==>        Home and Logo
 =========================================
 */
 .section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 0.5rem;
 }
 
@@ -29,10 +23,8 @@ p {
 }
 
 .home-logo-p:hover {
-  cursor: url("./cursor_white.png"), -webkit-grab !important;
   cursor: url("./cursor_white.png"), grab !important;
 }
-
 /*
 =======================================
 ==>        Media Query 
@@ -42,9 +34,9 @@ p {
   img {
     width: 6rem;
   }
+
   p {
     font-family: "Open Sans", sans-serif;
     font-size: 1.1rem;
   }
 }
-/*# sourceMappingURL=home-style.css.map */

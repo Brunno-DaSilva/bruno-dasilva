@@ -19,20 +19,16 @@ const PageNotFound = () => {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
     >
       <animated.div
-        class="card1"
+        class="card1-404"
         style={{ transform: props.xy.interpolate(trans1) }}
       />
       <animated.div
-        class="card2"
+        class="card2-404"
         style={{ transform: props.xy.interpolate(trans2) }}
       />
       <animated.div
-        class="card3"
+        class="card3-404"
         style={{ transform: props.xy.interpolate(trans3) }}
-      />
-      <animated.div
-        class="card4"
-        style={{ transform: props.xy.interpolate(trans4) }}
       />
     </div>
   );
