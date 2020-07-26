@@ -26,6 +26,15 @@ Among many challenges, understanding the core concept of React Springs was, with
 
 ---
 
+### Performance: 
+
+#### Light House Audit: 
+
+<img src="images/lighthouse-performance-checker.png" width="100%" >
+
+
+---
+
 ##### Demos : http://www.bruno-dasilva.com/
 
 ---
