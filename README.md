@@ -35,6 +35,8 @@ Among many challenges, understanding the core concept of React Springs was, with
 
 ---
 
+All traffics are re-directed to HTTPS
+
 #### Demos : https://www.bruno-dasilva.com/
 
 ---
