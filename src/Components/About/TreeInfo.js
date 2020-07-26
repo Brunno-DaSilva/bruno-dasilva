@@ -130,7 +130,7 @@ const TreeInfo = () => {
               name="PayPall DEV Button"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
-            <Link to="/projects">
+            <Link aria-label="Open Projects Page" to="/projects">
               <Tree
                 name="Go to Projects"
                 style={{ color: "#e493129c", fontSize: "1.3rem" }}
@@ -158,7 +158,7 @@ const TreeInfo = () => {
               name="NodeJS"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
-            <Link to="/projects">
+            <Link aria-label="Open Projects Page" to="/projects">
               <Tree
                 name="Go to Projects"
                 style={{ color: "#e493129c", fontSize: "1.3rem" }}
@@ -186,7 +186,7 @@ const TreeInfo = () => {
               name="PostgreSQL"
               style={{ color: "#26b2e0", fontSize: "1.3rem" }}
             />
-            <Link to="/projects">
+            <Link aria-label="Open Projects Page" to="/projects">
               <Tree
                 name="Go to Projects"
                 style={{ color: "#e493129c", fontSize: "1.3rem" }}

@@ -54,7 +54,7 @@ export default function App() {
         className="animated fadeInLeft"
         id={darkMode ? "dark-mode-left-logo" : "left-logo"}
       >
-        <Link to="about">
+        <Link aria-label="Open About Me Button" to="about">
           <p>
             Bruno <br />
             <span>DaSilva</span>
@@ -70,7 +70,8 @@ export default function App() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/DaSilvaBrunoTexas"
+            href="https://github.com/Brunno-DaSilva"
+            aria-label="Open Bruno's Profile on GitHub"
           >
             <FontAwesomeIcon icon={faGithubAlt} size="1x"></FontAwesomeIcon>
           </a>
@@ -79,7 +80,8 @@ export default function App() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://codepen.io/dasilvabrunotexas/"
+            href="https://codepen.io/bruno-dasilva"
+            aria-label="Open Bruno's Profile on CodePen"
           >
             <FontAwesomeIcon icon={faCodepen} size="1x"></FontAwesomeIcon>
           </a>
@@ -89,6 +91,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/bruno-dasilva/"
+            aria-label="Open Bruno's Profile on Linkedin"
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="1x"></FontAwesomeIcon>
           </a>
@@ -98,6 +101,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
             href="https://profiles.generalassemb.ly/bruno-dasilva"
+            aria-label="Open Bruno's Profile on General Assembly"
           >
             <FontAwesomeIcon icon={faUserAlt} size="1x"></FontAwesomeIcon>
           </a>
@@ -122,9 +126,13 @@ export default function App() {
 
         <article>
           <button
-            // onClick={() => setDarkMode((prevMode) => !prevMode)}
             onClick={darkModeHandler}
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
+            aria-label={
+              darkMode
+                ? "Change Theme to light Mode"
+                : "Change Theme to Dark mode"
+            }
           >
             <FontAwesomeIcon icon={faAdjust} size="lg"></FontAwesomeIcon>
           </button>

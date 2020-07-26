@@ -115,7 +115,7 @@ class Contact extends Component {
                 <br />
                 <p id="btn-form">
                   <input
-                    // onClick={this.successMessage}
+                    aria-label="Submit Contact form"
                     type="submit"
                     name="submit"
                   />

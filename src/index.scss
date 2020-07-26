@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 :root {
   --main-dark-gray-bg: #2b2b2b;
   --main-light-gray-bg: #eaecef;
@@ -14,6 +15,7 @@
 /*=======================================
 ==> General Dark and Light Mode classes 
 =========================================*/
+
 .dark-mode {
   /* background: linear-gradient(to top left, #000000, #545454) !important;
   color: var(--main-light-gray-bg) !important;
@@ -23,7 +25,9 @@
   --title-light-gray-color: #9e9d9d;
   --title-dark-gray-color: #545454;
   --gold-highlight-color: #fca311;
+
   --dark-mode-bg: linear-gradient(to top left, #000000, #545454);
+
   --background: var(--dark-mode-bg);
   --foreground: var(--title-light-gray-color);
 }
@@ -31,6 +35,7 @@
 .light-mode {
   --title-dark-gray-color: #545454;
   --light-mode-bg: linear-gradient(to top left, #ffffff, #cfd2d6) !important;
+
   --foreground: var(--title-dark-gray-color);
   --background: var(--light-mode-bg);
 }
@@ -38,8 +43,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -66,12 +70,10 @@ h2,
 h3 {
   color: var(--foreground);
 }
-
 li,
 a {
   list-style: none;
   text-decoration: none;
-  -webkit-transition: 0.25ms;
   transition: 0.25ms;
 }
 
@@ -90,10 +92,6 @@ a:hover {
   will-change: transform, opacity;
 }
 
-#root::-moz-selection {
-  background: var(--foreground);
-}
-
 #root::selection {
   background: var(--foreground);
 }
@@ -102,20 +100,13 @@ a:hover {
   background: var(--foreground);
   color: var(--background);
 }
-
 .simple-trans-main > div {
   position: absolute;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   will-change: transform, opacity;
   background: var(--background) !important;
 }
@@ -131,16 +122,10 @@ a:hover {
   position: absolute !important;
   top: 0;
   left: 77.5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   z-index: 50;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0.2rem;
 }
 
@@ -159,20 +144,19 @@ a:hover {
   margin-top: 3.5rem;
   list-style: none;
   text-decoration: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .navigation-bar a:hover,
 .navigation-bar p:hover {
   cursor: pointer;
-  -webkit-box-shadow: inset 0 -5px 0 0 #e493129c;
-          box-shadow: inset 0 -5px 0 0 #e493129c;
+  box-shadow: inset 0 -5px 0 0 #e493129c;
 }
 
 /*=======================================
 ==>  End - Right Navigation 
 =========================================*/
+
 /*=======================================
 ==>  LightMode Top-Left-logo 
 =========================================*/
@@ -180,16 +164,10 @@ a:hover {
   position: absolute !important;
   top: 0;
   left: 3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   z-index: 50;
 }
-
 #left-logo p {
   font-family: "Archivo Black", sans-serif;
   font-size: 1.2rem;
@@ -204,8 +182,7 @@ a:hover {
   background-color: transparent;
   margin: 0.5rem;
   margin-top: 3rem;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 #left-logo p span {
@@ -221,24 +198,20 @@ a:hover {
   margin: 0.5rem;
   margin-top: 3rem;
 }
-
 /*=======================================
 ==>  END - LightMode Top-Left-logo 
 =========================================*/
+
 /*=======================================
 ==>  DarkMode Top-Left-logo 
 =========================================*/
+
 #dark-mode-left-logo {
   position: absolute !important;
   top: 0;
   left: 3%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   z-index: 50;
 }
 
@@ -256,8 +229,7 @@ a:hover {
   background-color: transparent;
   margin: 0.5rem;
   margin-top: 3rem;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 #dark-mode-left-logo p span {
@@ -277,37 +249,27 @@ a:hover {
 /*=======================================
 ==>  END - DarkMode Top-Left-logo 
 =========================================*/
+
 /*=======================================
 ==>  LightMode Bottom-Left-Icons 
 =========================================*/
+
 #left-icons {
   position: absolute !important;
   top: 80%;
   left: 3%;
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   z-index: 50;
 }
 
 #left-icons p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   z-index: 50;
@@ -319,7 +281,6 @@ a:hover {
 #left-icons p a {
   text-decoration: none;
   color: var(--foreground);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -331,37 +292,27 @@ a:hover {
 /*=======================================
 ==>  END -LightMode Bottom-Left-Icons 
 =========================================*/
+
 /*=======================================
 ==>  DarkMode Bottom-Left-Icons 
 =========================================*/
+
 #dark-mode-left-icons {
   position: absolute !important;
   top: 80%;
   left: 3%;
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   z-index: 50;
 }
 
 #dark-mode-left-icons p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   z-index: 50;
@@ -369,7 +320,6 @@ a:hover {
   padding: 0.3rem;
   cursor: pointer;
 }
-
 #dark-mode-left-icons p a {
   text-decoration: none;
   color: var(--title-light-gray-color);
@@ -383,9 +333,11 @@ a:hover {
 /*=======================================
 ==>  END -DarkMode Bottom-Left-Icons 
 =========================================*/
+
 /*=======================================
 ==>  LightMode Right-Bottom-Buttons  
 =========================================*/
+
 .btn-move-right {
   position: absolute;
   top: 91vh;
@@ -432,9 +384,11 @@ a:hover {
 /*=======================================
 ==>  END - LightMode Right-Bottom-Buttons  
 =========================================*/
+
 /*=======================================
 ==>  DarkMode Right-Bottom-Buttons  
 =========================================*/
+
 .dark-mode-btn-move-right {
   position: absolute;
   top: 91vh;
@@ -481,21 +435,15 @@ a:hover {
 /*=======================================
 ==>  END - DarkMode Right-Bottom-Buttons  
 =========================================*/
+
 /*=======================================
 ==>       Project Container 
 =========================================*/
 .projects-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   width: 85vw;
   height: 75vh;
 }
@@ -504,23 +452,15 @@ a:hover {
 .card-two,
 .card-three,
 .card-four {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
   width: 47%;
   height: 48%;
   background-color: var(--background);
   overflow-x: hidden;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .card-one,
@@ -531,16 +471,12 @@ a:hover {
 .projects-img-wrapper,
 .projects-details,
 .projects-img-wrapper2 {
-  display: -ms-grid;
   display: grid;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 50%;
   height: 100%;
 }
-
 .projects-img-wrapper,
 .projects-img-wrapper2 {
   width: 45%;
@@ -548,26 +484,15 @@ a:hover {
 
 .projects-img-wrapper img,
 .projects-img-wrapper2 img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
-
 .details-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: var(--background) !important;
@@ -576,27 +501,18 @@ a:hover {
 .details-title,
 .details-desc {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .details-title h1 {
   color: var(--foreground);
   font-size: 1.3em;
 }
-
 .details-desc {
   padding: 0 0.4em;
   color: var(--foreground);
 }
-
 .details-desc p {
   line-height: 1.5rem;
   font-size: 1em;
@@ -604,15 +520,9 @@ a:hover {
 }
 
 .details-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
 }
@@ -620,15 +530,9 @@ a:hover {
 .details-btn-github,
 .details-btn-demo {
   width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .details-btn-github button,
@@ -644,7 +548,6 @@ a:hover {
   color: var(--main-light-gray-bg);
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-  -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
@@ -658,19 +561,15 @@ a:hover {
 /*=======================================
 ==>  END - Project Container 
 =========================================*/
+
 /*====================
 ==> About Component  
 ====================*/
+
 .about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 80vw;
   height: 70vh;
   color: var(--foreground);
@@ -680,34 +579,19 @@ a:hover {
 .about-right {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-content {
   width: 100%;
   height: 100%;
   color: var(--foreground);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 0.3rem;
 }
 
@@ -719,7 +603,6 @@ a:hover {
   letter-spacing: 0.1rem;
   line-height: 5rem;
 }
-
 .about-left-p-2,
 .about-left-p-3 {
   text-align: left;
@@ -752,7 +635,6 @@ a:hover {
 .p-after-be-2 {
   margin-left: 1rem;
 }
-
 .p-after-fe::after {
   content: "";
   max-width: 22vw;
@@ -784,7 +666,6 @@ a:hover {
   font-size: 2rem;
   font-weight: 600;
 }
-
 .about-left-p-2 span,
 .about-left-p-3 span {
   text-align: left;
@@ -796,19 +677,10 @@ a:hover {
   width: 99%;
   height: 100%;
   color: var(--background);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   border-radius: 0.3rem;
   padding: 1rem;
 }
@@ -817,26 +689,18 @@ a:hover {
 => Contact Page
 --------------------------*/
 #contactme {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
   width: 80vw;
   margin-top: 3rem;
 }
-
 .contact-title {
   font-size: 7.8rem;
   text-transform: uppercase;
   margin: 0 !important;
   letter-spacing: 0.2rem;
 }
-
 .contact-title::after {
   content: "";
   max-width: 30vw;
@@ -853,8 +717,7 @@ a:hover {
 .container-contact {
   max-width: 70%;
   text-align: center;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .contact {
@@ -862,17 +725,13 @@ a:hover {
   width: 25vw;
   padding: 1rem;
 }
-
 .contact form {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   background-color: transparent;
   padding: 0;
   margin: 0;
 }
-
 .contact form input,
 .contact form textarea {
   width: 70%;
@@ -894,7 +753,6 @@ a:hover {
   border: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  -webkit-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 
@@ -923,23 +781,13 @@ a:hover {
 #divID {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .home-logo-p:hover {
-  cursor: -webkit-grab;
+  cursor: -moz-grab;
   cursor: grab;
 }
 
@@ -994,15 +842,9 @@ a:hover {
 .container-404 {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /******************************************
@@ -1012,11 +854,13 @@ a:hover {
 =====================================
 
 ******************************************/
+
 /*
 =====================================
 ==>        Max-Width: 1605px
 =====================================
 */
+
 @media (max-width: 1605px) {
   /*
 =======================================
@@ -1027,12 +871,14 @@ a:hover {
     top: -4%;
     left: 70%;
   }
+
   #left-logo,
   #dark-mode-left-logo,
   #left-icons,
   #dark-mode-left-icons {
     left: 2%;
   }
+
   #left-logo,
   #dark-mode-left-logo {
     top: -5%;
@@ -1040,63 +886,49 @@ a:hover {
   /*=======================================
 ==>  LightMode Right-Bottom-Buttons  
 =========================================*/
+
   .btn-move-right,
   .dark-mode-btn-move-right {
     left: 93vw;
   }
+
   /*=======================================
 ==>  END - LightMode Right-Bottom-Buttons  
 =========================================*/
+
   /*
 =======================================
 ==>         About
 =========================================
 */
+
   .about-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     width: 80vw;
     height: 70vh;
   }
+
   .about-left,
   .about-right {
     width: 50%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .left-content {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     border-radius: 0.3rem;
   }
+
   .about-left-p,
   #expo {
     font-size: 1.7rem;
@@ -1109,26 +941,31 @@ a:hover {
     letter-spacing: 0.1rem;
     line-height: 3.5rem !important;
   }
+
   .aboutText {
     width: 90%;
     height: 70% !important;
     overflow-x: hidden;
   }
+
   .p-after-fe,
   .p-after-be {
     font-size: 2rem !important;
     font-weight: 600 !important;
   }
+
   .p-after-fe::after {
     max-width: 19vw;
     margin-top: -1.4rem;
     margin-left: 4.5rem;
   }
+
   .p-after-be::after {
     max-width: 9.5vw;
     margin-top: -1.5rem;
     margin-left: 4.1rem;
   }
+
   .about-left-p span {
     text-align: left;
     font-size: 1.8rem;
@@ -1139,63 +976,55 @@ a:hover {
     font-size: 2rem;
     font-weight: 600;
   }
+
   .right-content {
     width: 99%;
     height: 100%;
     color: var(--background);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     border-radius: 0.3rem;
     padding: 1rem;
   }
+
   /*
 =======================================
 ==>         Projects
 =========================================
 */
+
   .projects-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     width: 90vw;
     height: 78vh;
   }
+
   .card-one,
   .card-two,
   .card-three,
   .card-four {
     width: 48%;
   }
+
   .card-one,
   .card-three {
     margin-right: 1rem;
   }
+
   .projects-img-wrapper,
   .projects-details {
     width: 45%;
   }
+
   .projects-details {
     width: 55%;
   }
+
   .details-title,
   .details-desc {
     width: 100%;
@@ -1208,6 +1037,7 @@ a:hover {
     color: var(--foreground);
     height: 45%;
   }
+
   /*=======================================
 ==>  END - Project Container 
 =========================================*/
@@ -1223,20 +1053,24 @@ a:hover {
     top: -2%;
     left: 65%;
   }
+
   /*
 =======================================
 ==>         Projects - 1305px
 =========================================
 */
+
   .projects-img-wrapper,
   .projects-details {
     width: 100%;
   }
+
   /*
 =======================================
 ==>         Contact
 =========================================
 */
+
   .contact-title {
     font-size: 7rem;
     text-transform: uppercase;
@@ -1258,6 +1092,7 @@ a:hover {
   #btn-form input {
     width: 40%;
   }
+
   .alert {
     font-size: 0.8rem;
   }
@@ -1277,6 +1112,7 @@ a:hover {
   .dark-mode-btn-move-right {
     left: 90vw;
   }
+
   .contact-title {
     font-size: 7rem;
     text-transform: uppercase;
@@ -1293,6 +1129,7 @@ a:hover {
   #btn-form input {
     width: 50%;
   }
+
   /*
 =======================================
 ==>         About
@@ -1301,10 +1138,12 @@ a:hover {
   .about-left {
     display: none;
   }
+
   .about-right {
     width: 100%;
     height: 100%;
   }
+
   .right-content {
     padding: 0.5rem;
   }
@@ -1320,28 +1159,29 @@ a:hover {
     top: -2%;
     left: 50%;
   }
+
   .btn-move-right,
   .dark-mode-btn-move-right {
     left: 88vw;
   }
+
   #left-logo,
   #dark-mode-left-logo,
   #left-icons,
   #dark-mode-left-icons {
     left: 0.5%;
   }
+
   .contact-title {
     display: none;
   }
+
   .container-contact {
     width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
+
   .contact {
     width: 45vw;
   }
@@ -1359,18 +1199,18 @@ a:hover {
   .navigation-bar {
     top: -4.5%;
     left: 88%;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
   .navigation-bar a:hover,
   .navigation-bar p:hover {
     cursor: pointer;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
+
   .navigation-bar__item {
     display: none;
   }
+
   .side-drawer,
   .backdrop,
   .toggle-button,
@@ -1378,54 +1218,46 @@ a:hover {
     display: block;
   }
   .toggle-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
     height: 24px;
     width: 30px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
+
   .toggle-button:focus {
     outline-color: #fca311;
   }
+
   .toggle-button__line {
     width: 30px;
     height: 2px;
     background: var(--foreground);
   }
+
   .side-drawer {
     height: 100%;
     background: var(--background);
-    -webkit-box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.9);
-            box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.9);
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     left: 70%;
     width: 50%;
     max-width: 300px;
     z-index: 99 !important;
-    -webkit-transform: translateX(10%);
-            transform: translateX(10%);
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-    transition: -webkit-transform 0.3s ease-out;
+    transform: translateX(10%);
     transition: transform 0.3s ease-out;
-    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
   }
+
   .side-drawer.open {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
+
   .backdrop {
     position: absolute;
     top: 0;
@@ -1436,6 +1268,7 @@ a:hover {
     opacity: 0.3;
     z-index: 10;
   }
+
   /*
 =======================================
 ==>         About
@@ -1449,38 +1282,33 @@ a:hover {
   .left-content {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .p-after-fe,
   .p-after-be {
     font-size: 2rem !important;
     font-weight: 600 !important;
   }
+
   .p-after-fe-2,
   .p-after-be-2,
   .p-after-fe-3 {
     font-size: 1.8rem !important;
     font-weight: 600 !important;
   }
+
   .p-after-fe::after {
     max-width: 25vw;
     margin-top: -1.4rem;
   }
+
   .p-after-be::after {
     max-width: 25vw;
   }
+
   .about-left-p span {
     text-align: left;
     font-size: 1.8rem;
@@ -1491,26 +1319,29 @@ a:hover {
     font-size: 2rem;
     font-weight: 600;
   }
+
   .about-right {
     display: none;
   }
+
   .contact-title {
     display: none;
   }
+
   .wrapper-contact {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
   }
   .wrapper-contact > * {
     padding: 2em;
   }
+
   .company-info h3,
   .company-info ul,
   .brand {
     text-align: left;
   }
+
   /*
 =======================================
 ==>        Projects  
@@ -1520,21 +1351,18 @@ a:hover {
     display: none;
   }
   .projects-img-wrapper2 img {
-    -o-object-fit: fill !important;
-       object-fit: fill !important;
-    -o-object-position: 50% 50% !important;
-       object-position: 50% 50% !important;
-    /* default value: image is centered*/
+    object-fit: fill !important;
+    object-position: 50% 50% !important; /* default value: image is centered*/
     width: 40vw;
     height: auto;
     margin-left: 0.5rem;
   }
+
   .details-btn-github,
   .details-btn-demo {
     width: 50%;
   }
 }
-
 /*
 =======================================
 ==>        Max-Width: 550px
@@ -1544,54 +1372,60 @@ a:hover {
   .navigation-bar {
     top: -4.5%;
   }
+
   .navigation-bar a:hover,
   .navigation-bar p:hover {
     cursor: pointer;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
+
   #dark-mode-left-logo,
   #left-logo {
     display: none;
   }
+
   #contactme {
     width: 100vw;
     height: 60vh;
   }
+
   .container-contact {
     width: 100% !important;
     height: 100%;
     text-align: center;
-    -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
+
   .wrapper-contact {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 2fr !important;
-        grid-template-columns: 2fr !important;
+    grid-template-columns: 2fr !important;
     width: 100% !important;
   }
+
   .contact {
     position: absolute;
     left: 5%;
     width: 90vw;
     padding: 0.1rem;
   }
+
   .contact form input,
   .contact form textarea {
     width: 100%;
     padding: 0.5rem 1rem;
   }
+
   #btn-form input {
     width: 40%;
   }
   .alert {
     font-size: 0.9rem;
   }
+
   .required {
     display: none;
   }
+
   /*=======================================
 ==>       Project Container 
 =========================================*/
@@ -1600,6 +1434,7 @@ a:hover {
     height: 75vh;
     overflow-x: hidden;
   }
+
   .card-one,
   .card-two,
   .card-three,
@@ -1607,6 +1442,7 @@ a:hover {
     width: 100%;
     height: 53.5%;
   }
+
   .card-one,
   .card-three {
     margin-bottom: 1rem;
@@ -1615,6 +1451,7 @@ a:hover {
   .card-two {
     margin-bottom: 1rem;
   }
+
   .projects-img-wrapper,
   .projects-details,
   .projects-img-wrapper2 {
@@ -1625,33 +1462,29 @@ a:hover {
   .projects-img-wrapper2 {
     width: 100%;
   }
+
   .projects-img-wrapper img,
   .projects-img-wrapper2 img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     width: 100%;
     height: 100%;
   }
+
   /*====================
 ==> About Component  
 ====================*/
   .about-container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .about-left {
     display: block;
     width: 100% !important;
     height: 100%;
   }
+
   .aboutText {
     position: "absolute";
     top: 50% !important;
@@ -1671,12 +1504,15 @@ a:hover {
     font-size: 1.8rem !important;
     font-weight: 600 !important;
   }
+
   .p-after-fe::after {
     display: none;
   }
+
   .p-after-be::after {
     display: none;
   }
+
   .about-left-p span {
     text-align: left;
     font-size: 1.8rem;
@@ -1687,9 +1523,11 @@ a:hover {
     font-size: 2rem;
     font-weight: 600;
   }
+
   .about-right {
     display: none;
   }
+
   .contact-title {
     display: none;
   }
@@ -1700,31 +1538,31 @@ a:hover {
     top: -4.5%;
     left: -1%;
   }
+
   .navigation-bar p,
   .navigation-bar a {
     font-size: 0.8rem;
     padding: 0.2rem;
   }
+
   #left-icons,
   #dark-mode-left-icons {
     top: 90.5%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     width: 75%;
   }
+
   #left-icons p,
   #dark-mode-left-icons p {
     font-size: 2rem;
   }
+
   #dark-mode-left-logo,
   #left-logo {
     display: none;
   }
+
   .btn-move-right,
   .dark-mode-btn-move-right {
     left: 84vw;
@@ -1732,12 +1570,14 @@ a:hover {
   .contact {
     top: 13%;
   }
+
   .contact form input,
   .contact form textarea {
     width: 100%;
     padding: 0.2rem 1rem;
     font-size: 0.9rem;
   }
+
   #btn-form input {
     position: absolute;
     top: 80%;
@@ -1754,13 +1594,13 @@ a:hover {
 ==>        Animations  
 =========================================
 */
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
@@ -1772,7 +1612,6 @@ a:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-
 .animated.delay-1shalf {
   -webkit-animation-delay: calc(1s * 1.5);
   animation-delay: calc(1s * 1.5);
@@ -1800,19 +1639,16 @@ a:hover {
   -webkit-animation-delay: calc(1s * 3);
   animation-delay: calc(1s * 3);
 }
-
 .animated.delay-3shalf {
   -webkit-animation-delay: calc(1s * 3.4);
   animation-delay: calc(1s * 3);
   -webkit-animation-delay: calc(1s * 3.4);
   animation-delay: calc(1s * 3.4);
 }
-
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
@@ -1834,6 +1670,7 @@ a:hover {
     -webkit-transform: translate3d(50px, 0, 0);
     transform: translate3d(50px, 0, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -1849,6 +1686,7 @@ a:hover {
     -webkit-transform: translate3d(50px, 0, 0);
     transform: translate3d(50px, 0, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -1867,6 +1705,7 @@ a:hover {
     -webkit-transform: translate3d(-50px, 0, 0);
     transform: translate3d(-50px, 0, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -1882,6 +1721,7 @@ a:hover {
     -webkit-transform: translate3d(-50px, 0, 0);
     transform: translate3d(-50px, 0, 0);
   }
+
   to {
     opacity: 1;
     -webkit-transform: none;
@@ -1901,6 +1741,7 @@ a:hover {
     -webkit-transform: translate3d(0, 40px, 0);
     transform: translate3d(0, 40px, 0);
   }
+
   to {
     opacity: 1;
     /*visibility: visible;*/
@@ -1918,6 +1759,7 @@ a:hover {
     -webkit-transform: translate3d(0, 40px, 0);
     transform: translate3d(0, 40px, 0);
   }
+
   to {
     visibility: visible;
     opacity: 1;
@@ -1931,4 +1773,3 @@ a:hover {
 ==>        END-Animations  
 =======================================
 */
-/*# sourceMappingURL=index.css.map */

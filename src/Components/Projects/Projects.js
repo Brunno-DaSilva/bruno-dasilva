@@ -28,7 +28,7 @@ const Projects = () => {
 
               <div className="details-btn">
                 <div className="details-btn-github">
-                  <button>
+                  <button aria-label="Open Bruno's GitHub Page">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -39,7 +39,7 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="details-btn-demo">
-                  <button>
+                  <button aria-label="Open Bruno's Demo Project">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -87,7 +87,7 @@ const Projects = () => {
 
               <div className="details-btn">
                 <div className="details-btn-github">
-                  <button>
+                  <button aria-label="Open Bruno's GitHub Page">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -98,7 +98,7 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="details-btn-demo">
-                  <button>
+                  <button aria-label="Open Bruno's Demo Project">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -135,7 +135,7 @@ const Projects = () => {
               </div>
               <div className="details-btn">
                 <div className="details-btn-github">
-                  <button>
+                  <button aria-label="Open Bruno's GitHub Page">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -146,7 +146,7 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="details-btn-demo">
-                  <button>
+                  <button aria-label="Open Bruno's Demo Project">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -183,7 +183,7 @@ const Projects = () => {
 
               <div className="details-btn">
                 <div className="details-btn-github">
-                  <button>
+                  <button aria-label="Open Bruno's GitHub Page">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -194,7 +194,7 @@ const Projects = () => {
                   </button>
                 </div>
                 <div className="details-btn-demo">
-                  <button>
+                  <button aria-label="Open Bruno's Demo Project">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
