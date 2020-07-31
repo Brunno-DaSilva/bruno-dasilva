@@ -100,7 +100,7 @@ export default function App() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://profiles.generalassemb.ly/bruno-dasilva"
+            href="https://generalassemb.ly/instructors/bruno-leandro-da-silva/23311"
             aria-label="Open Bruno's Profile on General Assembly"
           >
             <FontAwesomeIcon icon={faUserAlt} size="1x"></FontAwesomeIcon>
