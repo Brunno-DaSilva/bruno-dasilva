@@ -32,6 +32,7 @@ function Home() {
           <p
             aria-label="On Hover draggable element"
             className="home-logo-p animated delay-2s fadeInUp"
+            title="Animation Drag it around the app"
           >
             Front-end Development
           </p>

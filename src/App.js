@@ -64,7 +64,7 @@ export default function App() {
 
       <div
         id={darkMode ? "dark-mode-left-icons" : "left-icons"}
-        className="animated fadeInLeft"
+        className="animated fadeInLeft "
       >
         <p>
           <a
@@ -72,6 +72,7 @@ export default function App() {
             rel="noopener noreferrer"
             href="https://github.com/Brunno-DaSilva"
             aria-label="Open Bruno's Profile on GitHub"
+            title="Go to my GitHub profile"
           >
             <FontAwesomeIcon icon={faGithubAlt} size="1x"></FontAwesomeIcon>
           </a>
@@ -82,6 +83,7 @@ export default function App() {
             rel="noopener noreferrer"
             href="https://codepen.io/bruno-dasilva"
             aria-label="Open Bruno's Profile on CodePen"
+            title="Go to my CodePen profile"
           >
             <FontAwesomeIcon icon={faCodepen} size="1x"></FontAwesomeIcon>
           </a>
@@ -92,6 +94,7 @@ export default function App() {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/bruno-dasilva/"
             aria-label="Open Bruno's Profile on Linkedin"
+            title="Go to my Linkedin profile"
           >
             <FontAwesomeIcon icon={faLinkedinIn} size="1x"></FontAwesomeIcon>
           </a>
@@ -102,6 +105,7 @@ export default function App() {
             rel="noopener noreferrer"
             href="https://generalassemb.ly/instructors/bruno-leandro-da-silva/23311"
             aria-label="Open Bruno's Profile on General Assembly"
+            title="Go to my GA instructor profile"
           >
             <FontAwesomeIcon icon={faUserAlt} size="1x"></FontAwesomeIcon>
           </a>
@@ -129,6 +133,11 @@ export default function App() {
             onClick={darkModeHandler}
             className={darkMode ? "dark-mode-btn-move-right" : "btn-move-right"}
             aria-label={
+              darkMode
+                ? "Change Theme to light Mode"
+                : "Change Theme to Dark mode"
+            }
+            title={
               darkMode
                 ? "Change Theme to light Mode"
                 : "Change Theme to Dark mode"
