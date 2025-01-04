@@ -112,8 +112,8 @@ These were the very first design I decided to put it here to demonstrate a littl
 
 ---
 
-##### See more at http://www.bruno-dasilva.com/
+##### See more at https://bruno-dasilva-portfolio.netlify.app/
 
 ---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
